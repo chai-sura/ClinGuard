@@ -1,0 +1,252 @@
+[
+  {
+    "id": "fixture_001",
+    "grade": 1,
+    "report_text": "Patient ID: PT-0001. The patient reported mild fatigue and a slight headache 48 hours after the last dose of the medication. Vital signs were stable: BP 120/80 mmHg, HR 72 bpm. Patient described the headache as a 2 out of 10 in severity. No intervention was required and symptoms were managed with hydration and rest."
+  },
+  {
+    "id": "fixture_002",
+    "grade": 1,
+    "report_text": "Patient ID: PT-0002. The patient experienced mild nausea and a decrease in appetite 36 hours post-administration. They noted a mild queasiness that rated a 3 out of 10. Vitals were within normal limits, with a temperature of 98.6°F. The patient was advised to eat small, frequent meals and to stay hydrated."
+  },
+  {
+    "id": "fixture_003",
+    "grade": 1,
+    "report_text": "Patient ID: PT-0003. The patient presented with a mild rash on the arms and chest 24 hours after dosing. The rash was described as pruritic but not painful, rated 1 out of 10 in discomfort. Vital signs were stable: BP 115/75 mmHg, HR 68 bpm. No treatment was initiated, and the rash was monitored for any changes."
+  },
+  {
+    "id": "fixture_004",
+    "grade": 1,
+    "report_text": "Patient ID: PT-0004. The patient reported mild dizziness while standing, occurring 30 hours after their last dose. They rated the dizziness as a 2 out of 10. Vitals showed slight orthostatic changes: standing BP 110/70 mmHg, HR 80 bpm. The patient was advised to rise slowly and ensure adequate fluid intake."
+  },
+  {
+    "id": "fixture_005",
+    "grade": 1,
+    "report_text": "Patient ID: PT-0005. The patient experienced mild insomnia starting 72 hours post-treatment. They mentioned difficulty falling asleep, rating their sleep quality as a 3 out of 10. Vital signs were normal, and the patient was counseled on good sleep hygiene practices to help mitigate the issue."
+  },
+  {
+    "id": "fixture_006",
+    "grade": 1,
+    "report_text": "Patient ID: PT-0006. The patient reported mild abdominal discomfort and bloating 48 hours after the last dose. They rated the discomfort as a 2 out of 10 and reported stable vitals: BP 125/80 mmHg, HR 74 bpm. The nursing team recommended a bland diet and over-the-counter antacids for relief."
+  },
+  {
+    "id": "fixture_007",
+    "grade": 1,
+    "report_text": "Patient ID: PT-0007. The patient noted mild dry mouth and increased thirst 24 hours after administering the medication. They described the dryness as a 1 out of 10 discomfort level. Vitals were stable with BP 118/76 mmHg, HR 70 bpm. They were advised to increase fluid intake and use lip balm."
+  },
+  {
+    "id": "fixture_008",
+    "grade": 1,
+    "report_text": "Patient ID: PT-0008. The patient exhibited mild muscle soreness in the legs 72 hours after receiving the last dose. They rated the soreness as a 2 out of 10 on the pain scale. Vital signs were normal: BP 120/78 mmHg, HR 75 bpm. The patient was advised to engage in light stretching and gentle exercises."
+  },
+  {
+    "id": "fixture_009",
+    "grade": 1,
+    "report_text": "Patient ID: PT-0009. The patient complained of mild headaches occurring intermittently for the past two days, assessed as a 1 out of 10 in severity. Vitals were stable: BP 122/80 mmHg, HR 76 bpm. The patient was encouraged to stay well-hydrated and use over-the-counter analgesics as needed."
+  },
+  {
+    "id": "fixture_010",
+    "grade": 1,
+    "report_text": "Patient ID: PT-0010. The patient reported mild tiredness and slight mood changes, noting they felt a bit more irritable since the last dose taken 48 hours prior. They rated their mood as a 2 out of 10 for negativity. Vital signs remained stable with BP 121/79 mmHg, HR 71 bpm. Patient was reassured and advised to engage in relaxing activities."
+  },
+  {
+    "id": "fixture_011",
+    "grade": 2,
+    "report_text": "Patient ID PT-1001 reported experiencing moderate fatigue and mild dizziness 48 hours after the last dose of the study drug. Vital signs were stable: BP 120/80 mmHg, HR 76 bpm. Patient rated fatigue as 5 on a scale of 1-10. Symptoms impacting daily activities."
+  },
+  {
+    "id": "fixture_012",
+    "grade": 2,
+    "report_text": "Patient ID PT-1002 described a moderate headache and nausea starting 36 hours post-administration. The headache was rated a 6 out of 10 and was partially relieved with over-the-counter medication. Vitals were within normal limits: BP 118/76 mmHg, HR 72 bpm."
+  },
+  {
+    "id": "fixture_013",
+    "grade": 2,
+    "report_text": "Patient ID PT-1003 noted moderate abdominal discomfort and bloating 72 hours after receiving the dose. The patient reported pain levels at 4 out of 10, with no accompanying fever, and normal vitals: BP 110/70 mmHg, HR 80 bpm. Diet adjusted to address symptoms."
+  },
+  {
+    "id": "fixture_014",
+    "grade": 2,
+    "report_text": "Patient ID PT-1004 expressed feelings of anxiety and restlessness 24 hours after the last dose. Symptoms rated at 5 out of 10, with no significant impact on vitals (BP 115/75 mmHg, HR 78 bpm). Patient requested relaxation techniques to manage symptoms."
+  },
+  {
+    "id": "fixture_015",
+    "grade": 2,
+    "report_text": "Patient ID PT-1005 exhibited moderate joint pain in the knees and wrists 60 hours post-dose. Pain level reported as 5 out of 10, with swelling noted. Vitals stable: BP 122/82 mmHg, HR 75 bpm. Patient advised to rest and monitor symptoms."
+  },
+  {
+    "id": "fixture_016",
+    "grade": 2,
+    "report_text": "Patient ID PT-1006 experienced moderate skin rash and itching about 48 hours post-dose, with the rash covering approximately 20% of the body surface. Patient rated itchiness as 6 out of 10. Vitals: BP 116/74 mmHg, HR 73 bpm. Topical treatment applied."
+  },
+  {
+    "id": "fixture_017",
+    "grade": 2,
+    "report_text": "Patient ID PT-1007 presented with moderate shortness of breath occurring 30 hours after the last dose. The patient described the sensation as a tightness in the chest, rating 5 out of 10. Vitals indicated mild tachycardia: BP 119/77 mmHg, HR 85 bpm. Monitoring advised."
+  },
+  {
+    "id": "fixture_018",
+    "grade": 2,
+    "report_text": "Patient ID PT-1008 reported moderate diarrhea, occurring 36 hours after dosing, with 3 episodes noted. Patient rated severity as 5 out of 10. Vitals were stable: BP 118/76 mmHg, HR 70 bpm. Hydration encouraged to prevent dehydration."
+  },
+  {
+    "id": "fixture_019",
+    "grade": 2,
+    "report_text": "Patient ID PT-1009 expressed moderate insomnia and fatigue beginning 24 hours after treatment. Sleep was disrupted, rating restlessness at a 6 out of 10. Vital signs remained stable: BP 121/79 mmHg, HR 74 bpm. Sleep hygiene measures discussed."
+  },
+  {
+    "id": "fixture_020",
+    "grade": 2,
+    "report_text": "Patient ID PT-1010 noted a moderate increase in blood pressure, recorded at 135/85 mmHg, 48 hours following pharmacological intervention. Patient reported mild anxiety, rating it a 5 out of 10. Encouraged relaxation techniques and follow-up monitoring."
+  },
+  {
+    "id": "fixture_021",
+    "grade": 3,
+    "report_text": "Patient ID: PT-1001. On day 5 post-dose, the patient presented with severe abdominal pain, vomiting, and dehydration. Vital signs showed a heart rate of 120 bpm and blood pressure of 85/50 mmHg. The patient required intravenous fluids and was hospitalized for further evaluation and management."
+  },
+  {
+    "id": "fixture_022",
+    "grade": 3,
+    "report_text": "Patient ID: PT-1002. On day 3 following the last dose, the patient developed severe shortness of breath, chest tightness, and wheezing. Oxygen saturation dropped to 88% on room air. Vital signs included a respiratory rate of 25 breaths per minute. The patient was admitted to the hospital for respiratory support and monitoring."
+  },
+  {
+    "id": "fixture_023",
+    "grade": 3,
+    "report_text": "Patient ID: PT-1003. The patient experienced Grade 3 severe rash on day 7 after receiving the last dose. The rash was widespread and itchy, accompanied by fever of 102°F. The patient’s blood pressure was stable, but hospitalization was required for management of severe skin reactions."
+  },
+  {
+    "id": "fixture_024",
+    "grade": 3,
+    "report_text": "Patient ID: PT-1004. On day 6 post-treatment, the patient reported severe headaches and visual disturbances. Upon examination, the patient exhibited elevated blood pressure at 160/100 mmHg and severe anxiety. The patient was admitted to the hospital for further neurological evaluation."
+  },
+  {
+    "id": "fixture_025",
+    "grade": 3,
+    "report_text": "Patient ID: PT-1005. The patient returned on day 4 post-dose with significant fatigue, elevated liver enzymes (AST/ALT 150/180), and jaundice. Vital signs were stable but concerning. The patient's condition necessitated hospitalization for further liver function monitoring and management."
+  },
+  {
+    "id": "fixture_026",
+    "grade": 3,
+    "report_text": "Patient ID: PT-1006. On day 8 post-administration, the patient presented with severe gastrointestinal bleeding, evidenced by hematemesis and melena. The patient had a drop in hemoglobin levels to 8 g/dL and vital signs showed tachycardia at 110 bpm. Hospitalization was critical for stabilization and potential transfusion."
+  },
+  {
+    "id": "fixture_027",
+    "grade": 3,
+    "report_text": "Patient ID: PT-1007. Following the last dose on day 5, the patient exhibited severe fatigue, muscle weakness, and an unexplained fever of 101°F. Laboratory tests indicated significant electrolyte imbalances. Hospitalization was required to address the critical lab values and monitor the patient’s condition closely."
+  },
+  {
+    "id": "fixture_028",
+    "grade": 3,
+    "report_text": "Patient ID: PT-1008. On day 9 post-dose, the patient experienced sudden onset of severe joint pain, significant swelling, and limited mobility. Vitals were stable, but the patient was unable to walk. Hospitalization was necessary for pain management and further evaluation of possible autoimmune responses."
+  },
+  {
+    "id": "fixture_029",
+    "grade": 3,
+    "report_text": "Patient ID: PT-1009. The patient reported severe dizziness, syncope, and extreme fatigue on day 6 after the last dose. Blood pressure was recorded at 70/40 mmHg. The patient was immediately hospitalized for further assessment of potential cardiovascular complications."
+  },
+  {
+    "id": "fixture_030",
+    "grade": 3,
+    "report_text": "Patient ID: PT-1010. On day 2 post-dose, the patient developed severe anxiety and panic attacks, with a heart rate peaking at 130 bpm. The patient reported feeling faint and breathless. Due to the severity of symptoms and risk of acute panic disorder, hospitalization was required for stabilization."
+  },
+  {
+    "id": "fixture_031",
+    "grade": 4,
+    "report_text": "Patient ID: PT-1001 reports severe respiratory distress 2 days after receiving the last dose of the experimental drug. The patient exhibits a respiratory rate of 34 breaths per minute and oxygen saturation levels dropping to 85%. Immediate oxygen supplementation required, and patient transferred to ICU for ventilation support. This was unexpected as the patient had no prior history of respiratory issues."
+  },
+  {
+    "id": "fixture_032",
+    "grade": 4,
+    "report_text": "Patient ID: PT-1002 experienced acute renal failure 3 days post-administration of the treatment. Blood work reveals elevated creatinine levels at 6.4 mg/dL, significantly higher than baseline. Patient is lethargic and has developed anuric renal output. Nephrology consult initiated, and emergency dialysis considered."
+  },
+  {
+    "id": "fixture_033",
+    "grade": 4,
+    "report_text": "Patient ID: PT-1003 developed severe thrombocytopenia 4 days after the final dose, with platelet levels falling to 12,000/mm3. The patient is presenting with petechiae and spontaneous bleeding from the gums. The bleeding has become significant enough that it poses an immediate threat to life, necessitating platelet transfusion."
+  },
+  {
+    "id": "fixture_034",
+    "grade": 4,
+    "report_text": "Patient ID: PT-1004 shows signs of anaphylaxis 1 hour post-infusion of the last dose. The patient is hypotensive with a blood pressure of 70/40 mmHg and has developed significant angioedema and difficulty breathing. Emergency epinephrine administered, and patient is placed on continuous monitoring in the emergency department."
+  },
+  {
+    "id": "fixture_035",
+    "grade": 4,
+    "report_text": "Patient ID: PT-1005 reports sudden onset of cardiac arrhythmia, specifically ventricular tachycardia, 2 days after receiving the drug. The patient’s heart rate spikes to 180 bpm and blood pressure drops to 80/50 mmHg. Immediate intervention required with anti-arrhythmic medication and patient transferred for advanced cardiac care."
+  },
+  {
+    "id": "fixture_036",
+    "grade": 4,
+    "report_text": "Patient ID: PT-1006 presents with severe hepatic failure manifesting 5 days post-drug administration. Jaundice is apparent, and labs show ALT levels exceeding 1500 IU/L. Patient complains of confusion and lethargy, suggesting hepatic encephalopathy. Transfer to a specialized liver unit is urgently needed."
+  },
+  {
+    "id": "fixture_037",
+    "grade": 4,
+    "report_text": "Patient ID: PT-1007 has developed severe gastrointestinal hemorrhage 3 days after the last dose. Patient exhibits hypotension with a blood pressure of 90/40 mmHg and heart rate of 120 bpm. After a significant drop in hemoglobin levels to 6.2 g/dL, the patient requires immediate blood transfusion and surgical intervention."
+  },
+  {
+    "id": "fixture_038",
+    "grade": 4,
+    "report_text": "Patient ID: PT-1008 presents with acute stroke symptoms including right-sided weakness and slurred speech 2 days post-treatment. CT scan confirms an ischemic stroke, and the patient’s NIHSS score is 18, indicating severe impairment. Neurology consult is critical, and thrombolysis is considered for potential intervention."
+  },
+  {
+    "id": "fixture_039",
+    "grade": 4,
+    "report_text": "Patient ID: PT-1009 shows evidence of severe hyperglycemia and diabetic ketoacidosis (DKA) 3 days following treatment. Blood glucose levels are recorded at 675 mg/dL, and the patient is in significant distress, exhibiting Kussmaul respirations. IV fluids and insulin therapy initiated in an emergency setting."
+  },
+  {
+    "id": "fixture_040",
+    "grade": 4,
+    "report_text": "Patient ID: PT-1010 develops severe skin reactions including generalized erythema and blistering 4 days post-dose. The patient is experiencing systemic symptoms such as fever and tachycardia, with a temperature of 103°F and heart rate of 110 bpm. This severe hypersensitivity reaction requires hospitalization and dermatological evaluation."
+  },
+  {
+    "id": "fixture_041",
+    "grade": 5,
+    "report_text": "Patient ID: PT-1001. The patient experienced sudden cardiac arrest approximately 48 hours after the last dose of the investigational drug. Initial vitals showed a heart rate of 140 bpm and blood pressure of 60/30 mmHg prior to collapse. Despite immediate resuscitation efforts, the patient did not respond and was pronounced dead on arrival at the hospital. Medical history included severe hypertension and previous myocardial infarction."
+  },
+  {
+    "id": "fixture_042",
+    "grade": 5,
+    "report_text": "Patient ID: PT-1002. This patient presented with severe respiratory distress and altered mental status 36 hours post-dose. Vitals included an oxygen saturation of 54% and a respiratory rate of 32 breaths per minute. Intubation was unsuccessful, and the patient succumbed to respiratory failure. Previous history of asthma and COPD may have contributed to the rapid decline in health."
+  },
+  {
+    "id": "fixture_043",
+    "grade": 5,
+    "report_text": "Patient ID: PT-1003. Upon review, the patient was found unresponsive 72 hours after the last medication dose, with a core temperature of 104°F and severe abdominal pain. Emergency intervention revealed an acute necrotizing pancreatitis that led to multi-organ failure. Despite aggressive treatment, the patient expired after two days in the intensive care unit."
+  },
+  {
+    "id": "fixture_044",
+    "grade": 5,
+    "report_text": "Patient ID: PT-1004. The patient was admitted after experiencing severe seizures and loss of consciousness 24 hours post-medication. Initial neurological assessment showed a Glasgow Coma Scale of 5. The patient was unable to recover from status epilepticus and was declared dead after 48 hours of intensive monitoring. No prior history of seizures was documented."
+  },
+  {
+    "id": "fixture_045",
+    "grade": 5,
+    "report_text": "Patient ID: PT-1005. After administering the investigational drug, the patient developed an anaphylactic reaction leading to rapid cardiovascular collapse. This occurred 12 hours following the last dose, presenting with hypotension (blood pressure 40/20 mmHg) and cardiac arrhythmias. Despite epinephrine administration, the patient could not be resuscitated and died."
+  },
+  {
+    "id": "fixture_046",
+    "grade": 5,
+    "report_text": "Patient ID: PT-1006. This patient experienced massive gastrointestinal bleeding 60 hours after receiving the treatment. Presenting symptoms included hematemesis and tachycardia with a heart rate of 135 bpm. Despite blood transfusions and attempts to stabilize, the patient went into shock and was pronounced dead after a rapid decline in hemodynamic status."
+  },
+  {
+    "id": "fixture_047",
+    "grade": 5,
+    "report_text": "Patient ID: PT-1007. The patient exhibited profound metabolic acidosis and renal failure 72 hours post-dose. Initial lab results indicated a potassium level of 7.5 mEq/L. Despite emergent dialysis attempts, the patient did not survive. Historical kidney issues may have exacerbated the response to the trial drug."
+  },
+  {
+    "id": "fixture_048",
+    "grade": 5,
+    "report_text": "Patient ID: PT-1008. The patient developed severe thrombocytopenia leading to spontaneous hemorrhage 48 hours after the last dose, presenting with petechiae and a fatal intracranial bleed. Initial vitals before the event showed a heart rate of 110 bpm and a blood pressure of 90/60 mmHg. The patient was declared deceased shortly after admittance."
+  },
+  {
+    "id": "fixture_049",
+    "grade": 5,
+    "report_text": "Patient ID: PT-1009. This patient experienced extreme hyperthermia and severe dehydration 36 hours after dosing. Vitals showed a temperature of 108°F, and the patient developed acute renal failure and cardiac arrest. Despite prompt medical intervention, the patient could not be resuscitated and passed away in the emergency department."
+  },
+  {
+    "id": "fixture_050",
+    "grade": 5,
+    "report_text": "Patient ID: PT-1010. The patient was found non-responsive 48 hours post-medication with severe respiratory failure due to acute lung injury. Early vitals showed diminished breath sounds and a blood oxygen level of 45%. Despite aggressive resuscitation efforts, the patient was declared dead after 24 hours in intensive care."
+  }
+]

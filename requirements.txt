@@ -1,0 +1,8 @@
+langgraph
+langchain-openai
+openai
+python-dotenv
+pandas
+openpyxl
+streamlit
+sentence-transformers
