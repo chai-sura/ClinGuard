@@ -23,9 +23,9 @@ Clinical trials generate hundreds of adverse event (AE) reports per week, each r
 Input Report
      │
      ▼
-┌─────────────────────────────────────┐
-│         LangGraph State Graph        │
-│                                     │
+┌────────────────────────────────────┐
+│         LangGraph State Graph      │
+│                                    │
 │  ┌──────────┐   ┌──────────────┐   │
 │  │Extractor │──▶│  Classifier  │   │
 │  │ Agent 1  │   │   Agent 2    │   │
@@ -237,13 +237,3 @@ Eval Scores:
 
 ---
 
-## Disclaimer
-
-> This project is for portfolio demonstration purposes only. It is not intended for clinical use, medical decision-making, or deployment in any healthcare setting.
-
----
-
-## Author
-
-**[Your Name]**
-[GitHub](https://github.com/chai-sura) · [LinkedIn](#)
