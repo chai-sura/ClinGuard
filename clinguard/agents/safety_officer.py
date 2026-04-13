@@ -7,7 +7,6 @@ evaluates reasoning quality, and produces a final decision memo.
 
 import json
 import time
-
 from dotenv import load_dotenv
 from langchain_openai import ChatOpenAI
 
