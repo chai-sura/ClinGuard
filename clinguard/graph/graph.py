@@ -1,9 +1,11 @@
 """
 ClinGuard LangGraph pipeline.
 
-Connects the three agents (extractor → classifier → safety_officer)
-with conditional routing that retries the classifier when confidence
-is low, up to a maximum of 3 retries.
+Linear flow: extractor → classifier → verifier → END. There is no retry loop —
+retrying an identical prompt at temperature 0 reproduces the same answer, so it
+added latency without value and risked an unbounded classifier→classifier loop.
+Low grader confidence (<0.7) is now handled downstream by the verifier, which
+flags the run for human review rather than looping.
 """
 
 import time
@@ -12,64 +14,29 @@ from langgraph.graph import END, StateGraph
 
 from clinguard.agents.classifier import classifier_node
 from clinguard.agents.extractor import extractor_node
-from clinguard.agents.safety_officer import safety_officer_node
+from clinguard.agents.verifier import verifier_node
 from clinguard.graph.state import AgentState
-
-_MAX_RETRIES = 3
-_CONFIDENCE_THRESHOLD = 0.7
-
-
-def route_after_classifier(state: AgentState) -> str:
-    """
-    Conditional router executed after the classifier node.
-
-    Routes to safety_officer when confidence is sufficient or retries
-    are exhausted; routes back to classifier for a low-confidence retry.
-    """
-    confidence = float(state.get("confidence") or 0.0)
-    retry_count = int(state.get("retry_count") or 0)
-
-    if confidence >= _CONFIDENCE_THRESHOLD or retry_count >= _MAX_RETRIES:
-        return "safety_officer"
-
-    # Increment retry counter in state before looping back
-    state["retry_count"] = retry_count + 1
-    return "classifier"
 
 
 def build_graph():
     """
     Build and compile the ClinGuard LangGraph state graph.
 
-    Graph topology:
-        extractor → classifier →(conditional)→ safety_officer → END
-                         ↑______________(retry)__|
+    Graph topology (acyclic — cannot loop):
+        extractor → classifier → verifier → END
     """
     graph = StateGraph(AgentState)
 
     # Register all three agent nodes
     graph.add_node("extractor", extractor_node)
     graph.add_node("classifier", classifier_node)
-    graph.add_node("safety_officer", safety_officer_node)
+    graph.add_node("verifier", verifier_node)
 
-    # Entry point — always start with extraction
+    # Straight-line edges — every node hands off exactly once, no cycles.
     graph.set_entry_point("extractor")
-
-    # Extractor always hands off to classifier
     graph.add_edge("extractor", "classifier")
-
-    # Classifier routes conditionally based on confidence and retry count
-    graph.add_conditional_edges(
-        "classifier",
-        route_after_classifier,
-        {
-            "safety_officer": "safety_officer",
-            "classifier": "classifier",
-        },
-    )
-
-    # Safety officer is always the terminal node
-    graph.add_edge("safety_officer", END)
+    graph.add_edge("classifier", "verifier")
+    graph.add_edge("verifier", END)
 
     return graph.compile()
 

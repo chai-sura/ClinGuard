@@ -1,6 +1,8 @@
 langgraph
 langchain-openai
+langchain-anthropic
 openai
+anthropic
 python-dotenv
 pandas
 openpyxl

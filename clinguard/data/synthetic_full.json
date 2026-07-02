@@ -1,0 +1,1923 @@
+[
+  {
+    "id": "syn_0001",
+    "report_text": "Patient ID: PT-0042. On day 7 post-administration of Cardexanib, the patient reported intermittent chest pain during a routine visit. Vitals recorded as: BP 128/76 mmHg, HR 72 bpm, RR 16 breaths/min, Temp 98.6\u00b0F, O2 saturation 98% on room air. The patient continued with all usual activities, including work, and no additional treatment was provided. The chest pain was noted only during routine checks, without any change in activity levels or functional capacity.",
+    "drug": "Cardexanib",
+    "symptoms": [
+      "chest pain"
+    ],
+    "target_grade": 1,
+    "expected_decision": "dismiss",
+    "messiness": "clean",
+    "hard": false
+  },
+  {
+    "id": "syn_0002",
+    "report_text": "PT-0042. Began c/o arthralgia, n/v, diarrhea ~3d post Naxolimab dose. VS: HR 76, BP 122/78, Temp 98.6\u00b0F. Pt reports no difficulty with usual activities, continues to work. No tx given. Symptoms noted during routine check, considered incidental finding.",
+    "drug": "Naxolimab",
+    "symptoms": [
+      "arthralgia",
+      "vomiting",
+      "diarrhea"
+    ],
+    "target_grade": 1,
+    "expected_decision": "dismiss",
+    "messiness": "abbreviated",
+    "hard": false
+  },
+  {
+    "id": "syn_0003",
+    "report_text": "Patient ID: PT-0042. Noticed some dyspnea starting about 2 days after the last dose of Veltorib. Vitals at that time: BP 118/76, HR 78, O2 sat 97% on room air, temp 98.6\u00b0F. Patient was doing all usual activities and work, reported no need to adjust daily routine. No treatment was administered; only mentioned during a routine check.",
+    "drug": "Veltorib",
+    "symptoms": [
+      "dyspnea"
+    ],
+    "target_grade": 1,
+    "expected_decision": "dismiss",
+    "messiness": "sloppy",
+    "hard": false
+  },
+  {
+    "id": "syn_0004",
+    "report_text": "Patient ID: PT-0042. Symptoms of vomiting and diarrhea began approximately 24 hours after the third dose of Osurentib. Vital signs recorded during the routine check: blood pressure 120/76 mmHg, heart rate 72 bpm, respiratory rate 16 breaths/min, temperature 98.6\u00b0F. Patient reported experiencing three episodes of vomiting and four loose stools over a 12-hour period but continued to attend work and engage in regular activities without any reported limitations. No treatment was administered.",
+    "drug": "Osurentib",
+    "symptoms": [
+      "vomiting",
+      "diarrhea"
+    ],
+    "target_grade": 1,
+    "expected_decision": "dismiss",
+    "messiness": "clean",
+    "hard": false
+  },
+  {
+    "id": "syn_0005",
+    "report_text": "PT-0042. Constipation noted on routine check 3 days post Naxolimab dose. Pt c/o infrequent bowel movements, last BM 4 days ago. Vitals: HR 72, BP 120/80, Temp 98.6\u00b0F, VS stable. Pt continues all usual activities, reports no changes in work routine. No treatment administered.",
+    "drug": "Naxolimab",
+    "symptoms": [
+      "constipation"
+    ],
+    "target_grade": 1,
+    "expected_decision": "dismiss",
+    "messiness": "abbreviated",
+    "hard": false
+  },
+  {
+    "id": "syn_0006",
+    "report_text": "Patient ID: PT-0042. Symptoms of diarrhea and pruritus began around day 10 post-dose of Osurentib. Vitals recorded: BP 120/75 mmHg, HR 72 bpm, Temp 98.6\u00b0F. The patient reported 2-3 loose stools daily and some itching on arms and legs but was able to continue working full-time without any interruptions. No treatments were administered during this period, and findings were noted during a routine check but did not seem to warrant further attention.",
+    "drug": "Osurentib",
+    "symptoms": [
+      "diarrhea",
+      "pruritus"
+    ],
+    "target_grade": 1,
+    "expected_decision": "dismiss",
+    "messiness": "sloppy",
+    "hard": false
+  },
+  {
+    "id": "syn_0007",
+    "report_text": "Patient ID: PT-0042. Approximately 24 hours after the administration of Naxolimab, the patient experienced episodes of vomiting. Vital signs recorded at that time were: blood pressure 120/78 mmHg, heart rate 72 bpm, respiratory rate 16 breaths/min, and temperature 98.6\u00b0F. The patient continued to attend work and engage in usual daily activities without interruption. No pharmacological treatment was administered, and the vomiting was noted during a routine check-in.",
+    "drug": "Naxolimab",
+    "symptoms": [
+      "vomiting"
+    ],
+    "target_grade": 1,
+    "expected_decision": "dismiss",
+    "messiness": "clean",
+    "hard": false
+  },
+  {
+    "id": "syn_0008",
+    "report_text": "PT-0042. Arthralgia and mucositis noted approx. 3 days post Veltorib dose. VS: BP 120/78 mmHg, HR 72 bpm, Temp 98.6\u00b0F. Pt c/o joint discomfort, able to perform usual activities and work, no change in routine. No treatment initiated. Incidental findings on routine check.",
+    "drug": "Veltorib",
+    "symptoms": [
+      "arthralgia",
+      "mucositis"
+    ],
+    "target_grade": 1,
+    "expected_decision": "dismiss",
+    "messiness": "abbreviated",
+    "hard": false
+  },
+  {
+    "id": "syn_0009",
+    "report_text": "PT-0042 had some mucositis symptoms that started around day 10 post-osurentib dose. Patient reports soreness in mouth, but says it\u2019s not bothering them much. Vitals: BP 120/78, HR 72, Temp 98.6. Patient continues to work full-time and participate in usual activities with no changes; no treatments given for this finding. The mucositis noted during routine check seemed incidental, as the patient was otherwise feeling fine.",
+    "drug": "Osurentib",
+    "symptoms": [
+      "mucositis"
+    ],
+    "target_grade": 1,
+    "expected_decision": "dismiss",
+    "messiness": "sloppy",
+    "hard": false
+  },
+  {
+    "id": "syn_0010",
+    "report_text": "Patient ID: PT-0042. On day 8 post Cardexanib administration, the patient presented with blood pressure readings of 150/95 mmHg. Vital signs were noted as follows: heart rate 78 bpm, respiratory rate 16 breaths per minute, and oxygen saturation 98% on room air. The patient reported episodes of vomiting totaling three times within a 24-hour period but attended scheduled work without interruption. No additional interventions or treatments were administered following routine checks.",
+    "drug": "Cardexanib",
+    "symptoms": [
+      "hypertension",
+      "vomiting"
+    ],
+    "target_grade": 1,
+    "expected_decision": "dismiss",
+    "messiness": "clean",
+    "hard": false
+  },
+  {
+    "id": "syn_0011",
+    "report_text": "PT-0042. Rash noted on routine skin check, began approx. 5 days post-dose. Vitals: HR 72, BP 120/80, Temp 98.6\u00b0F. Pt c/o no discomfort, continues all usual activities; no treatment administered. Rash observed only during assessments, described as incidental finding.",
+    "drug": "Osurentib",
+    "symptoms": [
+      "rash"
+    ],
+    "target_grade": 1,
+    "expected_decision": "dismiss",
+    "messiness": "abbreviated",
+    "hard": false
+  },
+  {
+    "id": "syn_0012",
+    "report_text": "PT-0042 reported pruritus and fatigue about 3 days after the last dose of Emvatuzumab. Vitals taken at the visit were BP 120/78, HR 76, Temp 98.6\u00b0F. Patient continued to attend work and engage in all usual activities without any changes. No treatment was provided as symptoms were noted only during routine check-ins.",
+    "drug": "Emvatuzumab",
+    "symptoms": [
+      "pruritus",
+      "fatigue"
+    ],
+    "target_grade": 1,
+    "expected_decision": "dismiss",
+    "messiness": "sloppy",
+    "hard": false
+  },
+  {
+    "id": "syn_0013",
+    "report_text": "Patient ID: PT-0042. Symptoms of pruritus noted three days post-administration of Cardexanib. Vital signs recorded as follows: blood pressure 120/76 mmHg, heart rate 72 bpm, respiratory rate 16 breaths/min, temperature 98.6\u00b0F. The patient continued to engage in all usual daily activities and reported no disruptions to work or social life. No treatment was provided, and pruritus was observed incidentally during a routine check.",
+    "drug": "Cardexanib",
+    "symptoms": [
+      "pruritus"
+    ],
+    "target_grade": 1,
+    "expected_decision": "dismiss",
+    "messiness": "clean",
+    "hard": false
+  },
+  {
+    "id": "syn_0014",
+    "report_text": "PT-0042: \nC/o mucositis and arthralgia began 5 days post dose of Zolpretin. VS: BP 120/78, HR 74, Temp 98.6\u00b0F, O2 Sat 98%. Patient reports discomfort but continues usual activities, including work. No treatment or intervention required. Symptoms noted on routine check, incidental finding.",
+    "drug": "Zolpretin",
+    "symptoms": [
+      "mucositis",
+      "arthralgia"
+    ],
+    "target_grade": 1,
+    "expected_decision": "dismiss",
+    "messiness": "abbreviated",
+    "hard": false
+  },
+  {
+    "id": "syn_0015",
+    "report_text": "PT-0042 reported feeling some dyspnea starting around 2 hours after the last dose of Naxolimab. Vitals during check: BP 120/80, HR 72, O2 saturation 97% on room air. Patient continued with all regular activities including work and exercise. No treatment was administered, and the dyspnea was noted during a routine check, not mentioned during usual interactions.",
+    "drug": "Naxolimab",
+    "symptoms": [
+      "dyspnea"
+    ],
+    "target_grade": 1,
+    "expected_decision": "dismiss",
+    "messiness": "sloppy",
+    "hard": false
+  },
+  {
+    "id": "syn_0016",
+    "report_text": "Patient ID: PT-0042. On day 8 post-dose of Zolpretin, patient reported experiencing mucositis and vomiting. Vital signs recorded at the time: blood pressure 120/80 mmHg, heart rate 72 bpm, temperature 98.6\u00b0F, respiratory rate 16 breaths per minute, oxygen saturation 98% on room air. The patient continued to attend work and engage in usual activities without assistance. No treatment was administered for the symptoms, which were noted during a routine check and largely remained unchanged throughout the observation period.",
+    "drug": "Zolpretin",
+    "symptoms": [
+      "mucositis",
+      "vomiting"
+    ],
+    "target_grade": 1,
+    "expected_decision": "dismiss",
+    "messiness": "clean",
+    "hard": false
+  },
+  {
+    "id": "syn_0017",
+    "report_text": "PT-0042, thrombocytopenia noted on routine CBC, 14 days post-dose of Osurentib. Platelet count 75 x 10^9/L. VS stable: HR 72, BP 120/80, Temp 98.6\u00b0F. Pt c/o no symptoms. Engaged in all usual activities, attending work regularly. No treatment provided. Follow-up labs in 1 week.",
+    "drug": "Osurentib",
+    "symptoms": [
+      "thrombocytopenia"
+    ],
+    "target_grade": 1,
+    "expected_decision": "dismiss",
+    "messiness": "abbreviated",
+    "hard": false
+  },
+  {
+    "id": "syn_0018",
+    "report_text": "Patient ID: PT-0042. After administration of Emvatuzumab on Day 14, routine blood work noted neutrophil count at 1.2 x 10^9/L. Patient reported some discomfort in mouth starting around the same time, with white patches observed. Vital signs were 98.6\u00b0F, BP 120/80 mmHg, HR 72 bpm, O2 saturation 98% on room air. Patient continued attending work and engaging in usual daily activities without seeking additional treatment. No interventions noted.",
+    "drug": "Emvatuzumab",
+    "symptoms": [
+      "neutropenia",
+      "mucositis",
+      "dyspnea"
+    ],
+    "target_grade": 1,
+    "expected_decision": "dismiss",
+    "messiness": "sloppy",
+    "hard": false
+  },
+  {
+    "id": "syn_0019",
+    "report_text": "Patient ID: PT-0042. Approximately 12 hours post-administration of Cardexanib, blood pressure recorded at 150/95 mmHg, heart rate 78 bpm, respiratory rate 16 breaths/min, oxygen saturation 98% on room air. The patient remained at home, fully engaged in regular activities, including work responsibilities. No treatment was given, and the finding was noted incidentally during a routine health assessment.",
+    "drug": "Cardexanib",
+    "symptoms": [
+      "hypertension"
+    ],
+    "target_grade": 1,
+    "expected_decision": "dismiss",
+    "messiness": "clean",
+    "hard": false
+  },
+  {
+    "id": "syn_0020",
+    "report_text": "PT-0042. Diarrhea and mucositis noted 3 days post-dose of Emvatuzumab. VS: BP 120/80, HR 76, Temp 98.6\u00b0F. Patient c/o diarrhea 2-3 times daily, no blood; mucositis observed during routine check, no ulcers. Remains at home, continues all usual activities and work. No treatment provided.",
+    "drug": "Emvatuzumab",
+    "symptoms": [
+      "diarrhea",
+      "mucositis"
+    ],
+    "target_grade": 1,
+    "expected_decision": "dismiss",
+    "messiness": "abbreviated",
+    "hard": false
+  },
+  {
+    "id": "syn_0021",
+    "report_text": "Patient ID: PT-0042. Pt reported feeling dizzy starting about 2 hours after last dose of Panvorexin. Vitals at that time: BP 120/80, HR 72, respirations 16, O2 sat 97%. Pt continued to attend work and complete usual daily activities without any reports of interruption. No treatment was provided; dizziness seems to have been mentioned during routine check-in only.",
+    "drug": "Panvorexin",
+    "symptoms": [
+      "dizziness"
+    ],
+    "target_grade": 1,
+    "expected_decision": "dismiss",
+    "messiness": "sloppy",
+    "hard": false
+  },
+  {
+    "id": "syn_0022",
+    "report_text": "Patient ID: PT-0042. On Day 7 post Naxolimab administration, the patient presented with peripheral edema in both lower limbs, noted during a routine check. Vital signs recorded as: BP 120/76 mmHg, HR 72 bpm, Temp 98.6\u00b0F, Respiratory rate 16 breaths/min. Complete blood count revealed neutrophil count at 1.2 x 10^9/L; no treatment initiated. The patient reported a rash on the trunk, which appeared on Day 5, with no changes in daily activities or work. The patient continued to participate in all usual activities without modifications.",
+    "drug": "Naxolimab",
+    "symptoms": [
+      "edema limbs",
+      "neutropenia",
+      "rash"
+    ],
+    "target_grade": 1,
+    "expected_decision": "dismiss",
+    "messiness": "clean",
+    "hard": false
+  },
+  {
+    "id": "syn_0023",
+    "report_text": "PT-0042. Fatigue noted on routine check, ~3 days post 2nd dose of Osurentib. VS: BP 120/78, HR 72, Temp 98.6\u00b0F, O2 Sat 98%. Pt c/o feeling tired, however, continues usual activities; no missed work. No treatment initiated, vitals remain within normal limits.",
+    "drug": "Osurentib",
+    "symptoms": [
+      "fatigue"
+    ],
+    "target_grade": 1,
+    "expected_decision": "dismiss",
+    "messiness": "abbreviated",
+    "hard": false
+  },
+  {
+    "id": "syn_0024",
+    "report_text": "Patient ID: PT-0042. Patient reported experiencing chest pain and headache starting about 2 hours after taking the last dose of Panvorexin. Vitals at 10:30 AM showed blood pressure 120/80, heart rate 72, respiratory rate 16, and oxygen saturation 98%. Patient continued to engage in usual activities and work without changes. No treatments were provided, and symptoms noted during routine check at 3 PM seemed incidental.",
+    "drug": "Panvorexin",
+    "symptoms": [
+      "chest pain",
+      "headache"
+    ],
+    "target_grade": 1,
+    "expected_decision": "dismiss",
+    "messiness": "sloppy",
+    "hard": false
+  },
+  {
+    "id": "syn_0025",
+    "report_text": "Patient ID: PT-0042. Symptoms of constipation were noted on routine check approximately 5 days after the administration of the most recent dose of Veltorib. Vital signs recorded were as follows: Blood pressure 120/80 mmHg, heart rate 76 bpm, respiratory rate 16 breaths per minute, and temperature 98.6\u00b0F. The patient reported normal activity levels, continuing to work and engage in usual daily activities without interruption. No treatment was administered for the reported finding.",
+    "drug": "Veltorib",
+    "symptoms": [
+      "constipation"
+    ],
+    "target_grade": 1,
+    "expected_decision": "dismiss",
+    "messiness": "clean",
+    "hard": false
+  },
+  {
+    "id": "syn_0026",
+    "report_text": "Patient ID: PT-0042. Symptoms began approximately 36 hours after the latest dose of Naxolimab. Blood glucose levels measured at 215 mg/dL, and the patient reported increased thirst and urination. Vital signs recorded as: BP 130/85 mmHg, HR 82 bpm, RR 16 breaths/min, and temperature 98.6\u00b0F. The patient was advised to reduce physical activities, limiting errands and social outings. Glyburide 5 mg was administered orally, and the study drug was held for three days. The patient remained at home and did not require hospital admission. Follow-up labs conducted on day 5 showed blood glucose levels improved to 175 mg/dL.",
+    "drug": "Naxolimab",
+    "symptoms": [
+      "hyperglycemia"
+    ],
+    "target_grade": 2,
+    "expected_decision": "monitor",
+    "messiness": "clean",
+    "hard": false
+  },
+  {
+    "id": "syn_0027",
+    "report_text": "PT-0042 - 3 days post Panvorexin dose. C/o chest pain, SOB. VS: HR 92, BP 120/80, RR 20, O2 Sat 95%. K+ 3.2. Scaled back errands and chores, avoided strenuous activity. Administered oral K+ supplement. Study drug held for 48 hours. Stable at home.",
+    "drug": "Panvorexin",
+    "symptoms": [
+      "chest pain",
+      "hypokalemia",
+      "dyspnea"
+    ],
+    "target_grade": 2,
+    "expected_decision": "monitor",
+    "messiness": "abbreviated",
+    "hard": false
+  },
+  {
+    "id": "syn_0028",
+    "report_text": "Patient ID: PT-0042. Symptoms of mucositis began two days after the last dose of Panvorexin. Patient reported increased discomfort and difficulty swallowing. Vital signs were BP 118/76 mmHg, HR 82 bpm, temp 98.6\u00b0F. Labs showed slight increase in white blood cells, 11.2 K/uL. Patient less engaged in errands and stated difficulty with some chores at home. Managed with oral medication for symptom relief, and the study dose was held for a few days.",
+    "drug": "Panvorexin",
+    "symptoms": [
+      "mucositis"
+    ],
+    "target_grade": 2,
+    "expected_decision": "monitor",
+    "messiness": "sloppy",
+    "hard": false
+  },
+  {
+    "id": "syn_0029",
+    "report_text": "Patient ID PT-0042 experienced diarrhea beginning approximately 24 hours after the latest dose of Panvorexin. Recorded vital signs include blood pressure of 88/54 mmHg and heart rate of 102 bpm. The patient reported not engaging in regular errands or hobbies and noted increased fatigue. Oral hydration and loperamide were administered, and the study dose was held for 48 hours. Patient remained at home during this period, with stable vital signs recorded at the follow-up: blood pressure 100/62 mmHg and heart rate 94 bpm.",
+    "drug": "Panvorexin",
+    "symptoms": [
+      "diarrhea",
+      "hypotension"
+    ],
+    "target_grade": 2,
+    "expected_decision": "monitor",
+    "messiness": "clean",
+    "hard": false
+  },
+  {
+    "id": "syn_0030",
+    "report_text": "PT-0042 c/o fatigue and decreased activity 3 days post dose of Naxolimab. Labs: K 3.1 mmol/L (normal range 3.5-5.0). VS stable: HR 72 bpm, BP 120/80 mmHg. Pt reduced errands and skipped weekly hobby due to weakness. Started on oral potassium 20 mEq QD. Study dose held for 48 hrs. No hospitalization required.",
+    "drug": "Naxolimab",
+    "symptoms": [
+      "hypokalemia"
+    ],
+    "target_grade": 2,
+    "expected_decision": "monitor",
+    "messiness": "abbreviated",
+    "hard": false
+  },
+  {
+    "id": "syn_0031",
+    "report_text": "PT-0042 began experiencing noticeable edema in both limbs about 3 days after the last dose of Emvatuzumab. Blood potassium level was noted at 3.1 mmol/L on lab work. Patient reports scaling back on errands and hobbies, felt too fatigued to complete usual household chores. The study drug was held for a week, and oral potassium supplement was started. Vitals remained stable with BP 120/75, HR 78, and no hospitalization required.",
+    "drug": "Emvatuzumab",
+    "symptoms": [
+      "edema limbs",
+      "hypokalemia"
+    ],
+    "target_grade": 2,
+    "expected_decision": "monitor",
+    "messiness": "sloppy",
+    "hard": false
+  },
+  {
+    "id": "syn_0032",
+    "report_text": "Patient ID: PT-0042. Symptoms of arthralgia began approximately 48 hours after the last dose of Panvorexin. Patient reported joint discomfort affecting mobility and ability to perform daily activities, resulting in a reduction of errands and household tasks. Vital signs recorded: Blood pressure 117/76 mmHg, heart rate 72 bpm, respiratory rate 16 breaths/min, temperature 98.2\u00b0F. Laboratory values within normal limits. The patient was treated with over-the-counter ibuprofen and study drug temporarily withheld. The patient remained at home and did not require hospitalization.",
+    "drug": "Panvorexin",
+    "symptoms": [
+      "arthralgia"
+    ],
+    "target_grade": 2,
+    "expected_decision": "monitor",
+    "messiness": "clean",
+    "hard": false
+  },
+  {
+    "id": "syn_0033",
+    "report_text": "Patient ID: PT-0042. Symptoms began 2 days post Trelagliptor dose. Pt c/o cough, with episodes of SOB. VS: BP 120/78, HR 82, K+ 3.2 mEq/L, glucose 180 mg/dL. Scaled back errands, required assistance with daily chores. Administered oral K+ supplement; Trelagliptor held for 1 week. Follow-up labs pending.",
+    "drug": "Trelagliptor",
+    "symptoms": [
+      "hypokalemia",
+      "cough",
+      "hyperglycemia"
+    ],
+    "target_grade": 2,
+    "expected_decision": "monitor",
+    "messiness": "abbreviated",
+    "hard": false
+  },
+  {
+    "id": "syn_0034",
+    "report_text": "Patient ID: PT-0042. After the dose of Panvorexin on Day 7, patient reported nausea starting later that evening. Vital signs taken on Day 8 showed BP 110/70, HR 82, temperature 98.6\u00b0F. Patient stayed at home, skipped errands, and reduced participation in hobbies due to discomfort. Nausea was managed with 10 mg of ondansetron orally. Blood work showed creatinine levels slightly elevated at 1.3 mg/dL, but overall stable.",
+    "drug": "Panvorexin",
+    "symptoms": [
+      "nausea"
+    ],
+    "target_grade": 2,
+    "expected_decision": "monitor",
+    "messiness": "sloppy",
+    "hard": false
+  },
+  {
+    "id": "syn_0035",
+    "report_text": "Patient ID: PT-0042. Symptoms of fever, peripheral sensory neuropathy, and fatigue began approximately 48 hours after the last dose of Panvorexin. Patient reported a temperature of 100.8\u00b0F, heart rate of 88 bpm, and blood pressure of 120/76 mmHg. Neuropathy characterized by numbness in fingers and toes noted, with a reported decrease in ability to perform usual hobbies and errands. Patient was managed with oral acetaminophen for fever and study drug was held for 48 hours; no hospitalization required. Follow-up appointment scheduled for next week.",
+    "drug": "Panvorexin",
+    "symptoms": [
+      "fever",
+      "peripheral sensory neuropathy",
+      "fatigue"
+    ],
+    "target_grade": 2,
+    "expected_decision": "monitor",
+    "messiness": "clean",
+    "hard": false
+  },
+  {
+    "id": "syn_0036",
+    "report_text": "PT-0042: C/o n/v began ~24 hrs post dose of Zolpretin. VS: HR 82, BP 120/78, Temp 98.6\u00b0F. Labs: WBC slightly elevated at 11.5K. Oral ondansetron 4 mg administered. Patient scaled back on errands; unable to complete regular chores. No hospitalization required. Stable at present.",
+    "drug": "Zolpretin",
+    "symptoms": [
+      "vomiting"
+    ],
+    "target_grade": 2,
+    "expected_decision": "monitor",
+    "messiness": "abbreviated",
+    "hard": false
+  },
+  {
+    "id": "syn_0037",
+    "report_text": "Patient ID: PT-0042. On day 10 after the last Osurentib dose, the patient reported a headache and swelling in both legs. Blood pressure was 150/95 mmHg. The patient has decided to cut back on walks and is less engaged with household chores. Oral acetaminophen was given for headache relief, and the study dose was held. Previous vitals showed stability, but lab results indicated some electrolyte alterations. The patient remains at home.",
+    "drug": "Osurentib",
+    "symptoms": [
+      "headache",
+      "edema limbs",
+      "hypertension"
+    ],
+    "target_grade": 2,
+    "expected_decision": "monitor",
+    "messiness": "sloppy",
+    "hard": false
+  },
+  {
+    "id": "syn_0038",
+    "report_text": "Patient ID: PT-0042. The patient reported the onset of a persistent cough approximately 24 hours after the third dose of Panvorexin. Vital signs recorded at that time: blood pressure 130/85 mmHg, heart rate 82 bpm, respiratory rate 18 breaths per minute, oxygen saturation 96% on room air. The patient remained at home without hospital admission. The patient scaled back on household errands and leisure activities. An over-the-counter oral cough suppressant was used for management, and the study dose was held for two days. Follow-up appointment noted the patient's cough had improved, and vitals remained stable during that visit.",
+    "drug": "Panvorexin",
+    "symptoms": [
+      "cough"
+    ],
+    "target_grade": 2,
+    "expected_decision": "monitor",
+    "messiness": "clean",
+    "hard": false
+  },
+  {
+    "id": "syn_0039",
+    "report_text": "PT-0042: On D14 post Osurentib dose, pt c/o fever 100.5\u00b0F, HR 98, BP 120/75. Labs show ANC 800. Pt reports reduced activity, scaling back chores and errands. Managed with acetaminophen 500mg PO x2. VS stable; no hospital admission.",
+    "drug": "Osurentib",
+    "symptoms": [
+      "fever",
+      "neutropenia"
+    ],
+    "target_grade": 2,
+    "expected_decision": "monitor",
+    "messiness": "abbreviated",
+    "hard": false
+  },
+  {
+    "id": "syn_0040",
+    "report_text": "Patient ID PT-0042 started experiencing pruritus on day 7 after the last dose of Emvatuzumab. Vitals during this time were BP 120/78, HR 72, temp 98.6\u00b0F, and O2 sat 98% on room air. The patient mentioned scaling back on errands and hobbies due to discomfort. They were given an oral antihistamine and opted to hold the study dose temporarily. Patient remained at home and did not require hospitalization.",
+    "drug": "Emvatuzumab",
+    "symptoms": [
+      "pruritus"
+    ],
+    "target_grade": 2,
+    "expected_decision": "monitor",
+    "messiness": "sloppy",
+    "hard": false
+  },
+  {
+    "id": "syn_0041",
+    "report_text": "PT-0042 reported constipation and pruritus beginning three days post-administration of the study drug Emvatuzumab. Vital signs recorded at that time were blood pressure 120/78 mmHg, heart rate 72 bpm, respiratory rate 16 breaths/min, and temperature 98.6\u00b0F. The patient was able to remain at home but noted that they reduced their usual activities, including errands and household chores. Oral medication was provided to manage the symptoms, and the study dose was held for one week before resuming.",
+    "drug": "Emvatuzumab",
+    "symptoms": [
+      "constipation",
+      "pruritus"
+    ],
+    "target_grade": 2,
+    "expected_decision": "monitor",
+    "messiness": "clean",
+    "hard": false
+  },
+  {
+    "id": "syn_0042",
+    "report_text": "PT-0042, day 12 post-osurentib dose. c/o weakness and dizziness. K+ 2.9 mmol/L; HR 78 bpm; BP 124/76 mmHg; VS stable. Pt reduced errands and hobbies last 3 days. Started K+ oral supplement 20 mEq; study drug held for 1 week.",
+    "drug": "Osurentib",
+    "symptoms": [
+      "hypokalemia"
+    ],
+    "target_grade": 2,
+    "expected_decision": "monitor",
+    "messiness": "abbreviated",
+    "hard": false
+  },
+  {
+    "id": "syn_0043",
+    "report_text": "Patient ID: PT-0042. Symptoms began around day 5 after the last dose of Cardexanib. Patient reported increased thirst and urination, with blood glucose levels at 210 mg/dL. BP recorded at 150/95 mmHg. Patient experienced a persistent cough but did not seek hospital care. Vitals remained stable and patient continued treatment at home,  but scaled back on grocery shopping and house chores. A short course of oral metformin initiated to manage glucose levels.",
+    "drug": "Cardexanib",
+    "symptoms": [
+      "hyperglycemia",
+      "cough",
+      "hypertension"
+    ],
+    "target_grade": 2,
+    "expected_decision": "monitor",
+    "messiness": "sloppy",
+    "hard": false
+  },
+  {
+    "id": "syn_0044",
+    "report_text": "Patient ID: PT-0042. Symptoms of diarrhea began approximately 24 hours post-administration of Cardexanib. Patient reported increased frequency of bowel movements, averaging 6 episodes per day without blood or mucus. Vital signs recorded at 08:00: BP 110/70 mmHg, HR 82 bpm, Temp 98.4\u00b0F, and Oxygen Saturation 98% on room air. No hospitalization required; patient managed symptoms with loperamide 2mg orally, and study drug temporarily held for 48 hours. Patient noted reduction in participation in errands and chores due to ongoing symptoms but remained at home. Follow-up labs showed no significant electrolyte imbalances, with sodium at 140 mEq/L and potassium at 4.1 mEq/L.",
+    "drug": "Cardexanib",
+    "symptoms": [
+      "diarrhea"
+    ],
+    "target_grade": 2,
+    "expected_decision": "monitor",
+    "messiness": "clean",
+    "hard": false
+  },
+  {
+    "id": "syn_0045",
+    "report_text": "PT-0042: On Day 14, c/o elevated BP 150/92 mmHg at clinic visit. FBG 190 mg/dL. Stable VS, HR 78, RR 16. Pt reduced errands; unable to perform some chores. Zolpretin dose held, initiated oral antihypertensive. Follow-up scheduled in 1 week.",
+    "drug": "Zolpretin",
+    "symptoms": [
+      "hypertension",
+      "hyperglycemia"
+    ],
+    "target_grade": 2,
+    "expected_decision": "monitor",
+    "messiness": "abbreviated",
+    "hard": false
+  },
+  {
+    "id": "syn_0046",
+    "report_text": "Patient ID: PT-0042. Nausea reported starting about 48 hours after the latest Panvorexin dose. Patient's blood pressure was 110/70, pulse at 78 bpm; slightly elevated temperature at 99.2\u00b0F. They mentioned feeling queasy and decided to skip some errands and cut back on household chores. Treated with 10 mg of ondansetron orally, and study dose held for 2 days. Patient remained at home throughout.",
+    "drug": "Panvorexin",
+    "symptoms": [
+      "nausea"
+    ],
+    "target_grade": 2,
+    "expected_decision": "monitor",
+    "messiness": "sloppy",
+    "hard": false
+  },
+  {
+    "id": "syn_0047",
+    "report_text": "Patient ID: PT-0042. Symptoms began approximately 12 hours after the most recent dose of Veltorib. Blood pressure recorded at 88/54 mmHg and heart rate at 102 bpm during the visit; temperature remained normal at 98.6\u00b0F. Patient presented with a rash covering approximately 30% of the body surface area, with lesions noted on the abdomen and arms. Patient reports difficulty completing daily errands and chores, resulting in scaling back activities over the last two days. Oral medication administered to address hypotension, and the study drug was held temporarily. Patient remained at home for observation following the event.",
+    "drug": "Veltorib",
+    "symptoms": [
+      "hypotension",
+      "rash"
+    ],
+    "target_grade": 2,
+    "expected_decision": "monitor",
+    "messiness": "clean",
+    "hard": false
+  },
+  {
+    "id": "syn_0048",
+    "report_text": "PT-0042, c/o headache starting 3 days post dose of Osurentib. BP 130/85, HR 72, VS stable. Labs: CBC within normal limits. Pt scales back on errands, reports difficulty concentrating on hobbies. Managed with 500 mg acetaminophen, study drug held one day.",
+    "drug": "Osurentib",
+    "symptoms": [
+      "headache"
+    ],
+    "target_grade": 2,
+    "expected_decision": "monitor",
+    "messiness": "abbreviated",
+    "hard": false
+  },
+  {
+    "id": "syn_0049",
+    "report_text": "PT-0042 started experiencing peripheral sensory neuropathy and mucositis about a week after the last dose of Cardexanib. At the last check, blood pressure was 120/76, heart rate 72 bpm, and oxygen saturation was 97% on room air. The patient reported some chest pain but remained at home and scaled back on errands and hobbies. They were given an oral medication to manage the symptoms, and the study drug was held for now.",
+    "drug": "Cardexanib",
+    "symptoms": [
+      "peripheral sensory neuropathy",
+      "mucositis",
+      "chest pain"
+    ],
+    "target_grade": 2,
+    "expected_decision": "monitor",
+    "messiness": "sloppy",
+    "hard": false
+  },
+  {
+    "id": "syn_0050",
+    "report_text": "Patient ID: PT-0042. On Day 10 post dose of Veltorib, the patient reported fatigue and muscle weakness. Vital signs recorded: blood pressure 120/80 mmHg, heart rate 72 bpm, respiratory rate 16 breaths per minute, temperature 98.6\u00b0F, and potassium level 3.1 mmol/L. The patient reduced involvement in errands and household chores. Oral potassium supplementation was initiated, and the study dose was held temporarily. The patient's potassium level was rechecked after 48 hours and increased to 3.5 mmol/L.",
+    "drug": "Veltorib",
+    "symptoms": [
+      "hypokalemia"
+    ],
+    "target_grade": 2,
+    "expected_decision": "monitor",
+    "messiness": "clean",
+    "hard": false
+  },
+  {
+    "id": "syn_0051",
+    "report_text": "Patient ID: PT-0042. Symptoms began approximately three days after the administration of the study drug Osurentib. The patient was admitted to the hospital ward with a heart rate of 110 bpm, respiratory rate of 24 breaths per minute, and temperature of 100.8\u00b0F. Laboratory results indicated an absolute neutrophil count of 900 cells/mm\u00b3. The patient required intravenous fluids and was given a transfusion of packed red blood cells. The patient reported difficulty getting out of bed and was unable to perform self-care tasks.",
+    "drug": "Osurentib",
+    "symptoms": [
+      "neutropenia"
+    ],
+    "target_grade": 3,
+    "expected_decision": "escalate",
+    "messiness": "clean",
+    "hard": false
+  },
+  {
+    "id": "syn_0052",
+    "report_text": "PT-0042. On D3 post Osurentib dose, pt c/o cough and fatigue. VS: BP 88/56, HR 120, SpO2 85% on room air. Admitted to hospital ward. Unable to get out of bed. Received 2 L IV fluids, oxygen 4 L NC. Labs: Plt 75,000. Further complaints of SOB. IV steroids initiated.",
+    "drug": "Osurentib",
+    "symptoms": [
+      "cough",
+      "fatigue",
+      "thrombocytopenia"
+    ],
+    "target_grade": 3,
+    "expected_decision": "escalate",
+    "messiness": "abbreviated",
+    "hard": false
+  },
+  {
+    "id": "syn_0053",
+    "report_text": "Patient ID: PT-0042. Symptoms began about 4 hours after the last dose of Zolpretin. Patient was admitted to the hospital ward after several episodes of vomiting. Vitals upon admission: BP 88/54, HR 112, oxygen saturation 89% on room air. Unable to get out of bed or manage self-care; needed assistance for basic tasks. Received 1L IV fluids, antiemetics, and oxygen via nasal cannula. Labs indicated electrolyte imbalances.",
+    "drug": "Zolpretin",
+    "symptoms": [
+      "vomiting"
+    ],
+    "target_grade": 3,
+    "expected_decision": "escalate",
+    "messiness": "sloppy",
+    "hard": false
+  },
+  {
+    "id": "syn_0054",
+    "report_text": "Patient ID: PT-0042. On Day 7 after the administration of Cardexanib, the patient exhibited fatigue and pallor. Vital signs recorded upon admission to the hospital ward were blood pressure 85/55 mmHg, heart rate 112 bpm, respiratory rate 22 breaths/min, and oxygen saturation at 91% on room air. Laboratory results showed hemoglobin at 7.5 g/dL and absolute neutrophil count at 0.5 x 10^9/L. The patient required IV fluid resuscitation, oxygen therapy, and two units of packed red blood cells transfused. The patient was unable to perform self-care activities and remained in bed throughout the hospitalization.",
+    "drug": "Cardexanib",
+    "symptoms": [
+      "anemia",
+      "neutropenia"
+    ],
+    "target_grade": 3,
+    "expected_decision": "escalate",
+    "messiness": "clean",
+    "hard": false
+  },
+  {
+    "id": "syn_0055",
+    "report_text": "PT-0042, began c/o fatigue ~12 hrs post last dose of Trelagliptor. Admitted to ward with HR 110, BP 90/60, SpO2 88% on room air. Received IV fluids, 2L O2 via nasal cannula, and IV antiemetics; lab results: elevated BUN 35, Cr 1.8. Limited ability to get out of bed; required assistance for all self-care tasks.",
+    "drug": "Trelagliptor",
+    "symptoms": [
+      "fatigue"
+    ],
+    "target_grade": 3,
+    "expected_decision": "escalate",
+    "messiness": "abbreviated",
+    "hard": false
+  },
+  {
+    "id": "syn_0056",
+    "report_text": "PT-0042 started feeling fatigued and nauseated approximately 24 hours after the last dose of Cardexanib. The patient was admitted to the hospital ward with a heart rate of 110 bpm, temperature of 101.5\u00b0F, and blood pressure of 90/60 mmHg. They required IV fluids and anti-nausea medication. The patient was unable to get out of bed without assistance, and self-care was not possible during the stay.",
+    "drug": "Cardexanib",
+    "symptoms": [
+      "fatigue",
+      "nausea"
+    ],
+    "target_grade": 3,
+    "expected_decision": "escalate",
+    "messiness": "sloppy",
+    "hard": false
+  },
+  {
+    "id": "syn_0057",
+    "report_text": "Patient ID: PT-0042. Symptoms of pruritus began 2 hours after the administration of Naxolimab. The patient was admitted to the hospital ward after presenting to the ED with a blood pressure of 88/54 mmHg, heart rate of 112 bpm, and oxygen saturation of 89% on room air. Initial laboratory results indicated an elevated eosinophil count of 12,000 cells/\u00b5L. The patient was treated with IV fluids and administered diphenhydramine 50 mg IV. The patient was unable to get out of bed without assistance and required help for all self-care activities.",
+    "drug": "Naxolimab",
+    "symptoms": [
+      "pruritus"
+    ],
+    "target_grade": 3,
+    "expected_decision": "escalate",
+    "messiness": "clean",
+    "hard": false
+  },
+  {
+    "id": "syn_0058",
+    "report_text": "PT-0042: 2 hrs post Zolpretin dose. C/o nausea, diarrhea, and peripheral sensory neuropathy. Admitted to hospital ward. VS: HR 112, BP 88/56, Temp 100.4\u00b0F. O2 Sat 91% on room air. IV fluids and antiemetic initiated. Unable to self-care, reports weakness, unable to get out of bed without assist. Diarrhea 5x since onset. Labs: elevated electrolytes.",
+    "drug": "Zolpretin",
+    "symptoms": [
+      "peripheral sensory neuropathy",
+      "nausea",
+      "diarrhea"
+    ],
+    "target_grade": 3,
+    "expected_decision": "escalate",
+    "messiness": "abbreviated",
+    "hard": false
+  },
+  {
+    "id": "syn_0059",
+    "report_text": "PT-0042 started experiencing symptoms of peripheral sensory neuropathy about 3 days after the last dose of Osurentib. Patient admitted to the hospital after becoming unable to get out of bed without assistance. Vitals upon admission showed HR 110 bpm, BP 88/54 mmHg, and oxygen saturation at 90% on room air. Received IV fluids, oxygen therapy, and a dose of pain medication. Patient reported numbness in feet and hands and needed help with self-care tasks.",
+    "drug": "Osurentib",
+    "symptoms": [
+      "peripheral sensory neuropathy"
+    ],
+    "target_grade": 3,
+    "expected_decision": "escalate",
+    "messiness": "sloppy",
+    "hard": false
+  },
+  {
+    "id": "syn_0060",
+    "report_text": "Patient ID: PT-0042. On the morning of day 3 post-dose of Trelagliptor, the patient presented with increased joint pain consistent with arthralgia, rating pain as 7/10. Vital signs recorded: blood pressure 82/54 mmHg, heart rate 112 bpm, oxygen saturation 88% on room air. The patient was admitted to the hospital ward for further evaluation and treatment, unable to ambulate independently and requiring assistance for all activities of daily living. IV fluids were administered, and the patient received oxygen supplementation at 2 liters per minute. The patient remained in the hospital for 48 hours, during which time there were fluctuations in blood pressure, recorded at 76/52 mmHg at one point, and the patient continued to report joint pain restricting mobility.",
+    "drug": "Trelagliptor",
+    "symptoms": [
+      "arthralgia",
+      "hypotension"
+    ],
+    "target_grade": 3,
+    "expected_decision": "escalate",
+    "messiness": "clean",
+    "hard": false
+  },
+  {
+    "id": "syn_0061",
+    "report_text": "PT-0042. Symptoms began 3 days post Trelagliptor dose. Admitted to hospital ward. C/o difficulty walking, burning sensation in feet. VS: HR 112, BP 88/54, O2 sat 90% on RA. Treated with IV fluids, oxygen, pain management. Unable to transfer independently from bed to chair. N/v, anorexia noted.",
+    "drug": "Trelagliptor",
+    "symptoms": [
+      "peripheral sensory neuropathy"
+    ],
+    "target_grade": 3,
+    "expected_decision": "escalate",
+    "messiness": "abbreviated",
+    "hard": false
+  },
+  {
+    "id": "syn_0062",
+    "report_text": "PT-0042 reported fatigue starting 3 days after last dose of Panvorexin. Patient admitted to hospital with a temp of 100.8\u00b0F, heart rate 110 bpm, and blood pressure 90/60 mmHg. Labs showed platelets at 60,000 and ANC at 800. Was unable to get out of bed or perform self-care activities. Received IV fluids, oxygen support, and a platelet transfusion. Stayed in hospital for further evaluation and treatment.",
+    "drug": "Panvorexin",
+    "symptoms": [
+      "fatigue",
+      "thrombocytopenia",
+      "neutropenia"
+    ],
+    "target_grade": 3,
+    "expected_decision": "escalate",
+    "messiness": "sloppy",
+    "hard": false
+  },
+  {
+    "id": "syn_0063",
+    "report_text": "Patient ID: PT-0042. The patient was administered Emvatuzumab on Day 8 of the treatment regimen. On Day 10, the patient presented to the hospital ward with a blood pressure of 88/54 mmHg, heart rate 112 bpm, respiratory rate 22 breaths per minute, and oxygen saturation at 88% on room air. Laboratory results indicated a platelet count of 35,000 cells/uL. The patient required IV fluids and a platelet transfusion. The patient was unable to perform self-care tasks and required assistance to transfer from the bed to a chair. The patient remained in the hospital for further evaluation and treatment.",
+    "drug": "Emvatuzumab",
+    "symptoms": [
+      "thrombocytopenia"
+    ],
+    "target_grade": 3,
+    "expected_decision": "escalate",
+    "messiness": "clean",
+    "hard": false
+  },
+  {
+    "id": "syn_0064",
+    "report_text": "PT-0042, d1 post Trelagliptor dose. Pt c/o headache and fatigue. Admitted to ward. VS: HR 110, BP 88/54, RR 22, O2 sat 92% on RA. Received 2L IV fluids, 2 doses of IV analgesics, O2 via nasal cannula. Unable to self-care, required assistance for ambulation, mostly in bed.",
+    "drug": "Trelagliptor",
+    "symptoms": [
+      "headache",
+      "fatigue"
+    ],
+    "target_grade": 3,
+    "expected_decision": "escalate",
+    "messiness": "abbreviated",
+    "hard": false
+  },
+  {
+    "id": "syn_0065",
+    "report_text": "Patient ID: PT-0042. On day 3 post-dose of Emvatuzumab, the patient presented with significant bilateral edema in both legs and arms. BP recorded at 88/54 mmHg, HR 112 bpm, and oxygen saturation at 90% on room air. Patient was unable to get out of bed without assistance and required help for self-care activities. Admitted to the hospital ward for IV fluids and oxygen therapy. Labs showed elevated creatinine at 2.1 mg/dL.",
+    "drug": "Emvatuzumab",
+    "symptoms": [
+      "edema limbs"
+    ],
+    "target_grade": 3,
+    "expected_decision": "escalate",
+    "messiness": "sloppy",
+    "hard": false
+  },
+  {
+    "id": "syn_0066",
+    "report_text": "Patient ID: PT-0042. Symptoms began approximately 24 hours after last dose of Veltorib. The patient was admitted to the hospital with a temperature of 102.3\u00b0F, blood pressure of 90/60 mmHg, heart rate of 112 bpm, and respiratory rate of 22 breaths/min. Potassium level was recorded at 2.9 mEq/L. The patient reported dizziness, was unable to ambulate without assistance, and required help to get out of bed. Treatment included IV potassium replacement, fluids administered at 150 mL/hr, and supplemental oxygen at 2 L/min via nasal cannula. The patient remained hospitalized for 3 days with gradual improvement in potassium levels and ability to engage in self-care.",
+    "drug": "Veltorib",
+    "symptoms": [
+      "hypokalemia",
+      "fever",
+      "dizziness"
+    ],
+    "target_grade": 3,
+    "expected_decision": "escalate",
+    "messiness": "clean",
+    "hard": false
+  },
+  {
+    "id": "syn_0067",
+    "report_text": "PT-0042: 3 days post Trelagliptor dose. Admitted to ward with c/o fatigue, pallor noted. VS: HR 120, BP 85/50, O2 sat 88% on RA. Labs: Hgb 7.2 g/dL. Unable to get out of bed independently, required assistance for self-care. Received 2 units of PRBCs, IV fluids; O2 started at 3 L/min. Discharged in stable condition after 48 hr.",
+    "drug": "Trelagliptor",
+    "symptoms": [
+      "anemia"
+    ],
+    "target_grade": 3,
+    "expected_decision": "escalate",
+    "messiness": "abbreviated",
+    "hard": false
+  },
+  {
+    "id": "syn_0068",
+    "report_text": "Patient ID: PT-0042. Symptoms started approximately 24 hours after the last dose of Veltorib. Patient admitted to the hospital with BP 88/56, HR 112 bpm, and K+ levels at 2.9 mEq/L. Patient required IV potassium replacement and fluids. Patient unable to get out of bed without assistance and reported itching over multiple areas, especially the arms and back. Oxygen saturation at 92% on room air. Treatment included oxygen via nasal cannula.",
+    "drug": "Veltorib",
+    "symptoms": [
+      "hypokalemia",
+      "pruritus"
+    ],
+    "target_grade": 3,
+    "expected_decision": "escalate",
+    "messiness": "sloppy",
+    "hard": false
+  },
+  {
+    "id": "syn_0069",
+    "report_text": "Patient ID: PT-0042. Symptoms of dizziness began approximately 2 hours post-emvatuzumab administration. The patient was admitted to the hospital ward after presenting with a blood pressure of 80/50 mmHg, heart rate of 115 bpm, and oxygen saturation at 92% on room air. Upon admission, the patient was unable to get out of bed without assistance and required IV fluids and IV antiemetics. After 4 hours, the blood pressure improved to 100/60 mmHg, heart rate stabilized at 95 bpm, and oxygen saturation increased to 96% on 2 L/min of supplemental oxygen.",
+    "drug": "Emvatuzumab",
+    "symptoms": [
+      "dizziness"
+    ],
+    "target_grade": 3,
+    "expected_decision": "escalate",
+    "messiness": "clean",
+    "hard": false
+  },
+  {
+    "id": "syn_0070",
+    "report_text": "Pt ID: PT-0042. C/o dizziness and SOB 4 hrs post dose of Trelagliptor. VS: HR 112, BP 80/50, K+ 2.8. Admitted to hospital ward. Unable to get out of bed without assistance. IV fluids and electrolyte replacement given. O2 2L by nasal cannula. N/V reported.",
+    "drug": "Trelagliptor",
+    "symptoms": [
+      "hypokalemia",
+      "hypotension"
+    ],
+    "target_grade": 3,
+    "expected_decision": "escalate",
+    "messiness": "abbreviated",
+    "hard": false
+  },
+  {
+    "id": "syn_0071",
+    "report_text": "PT-0042 began experiencing fever around 24 hours after the last dose of Trelagliptor. Patient admitted to the hospital with a temp of 102.4\u00b0F, HR at 115 bpm, and BP at 88/56 mmHg. Patient had difficulty getting out of bed without assistance and required help for self-care. Received IV fluids, broad-spectrum antibiotics, and supplemental oxygen via nasal cannula. Spent 3 days in the hospital ward, then was transferred to the ICU for further care.",
+    "drug": "Trelagliptor",
+    "symptoms": [
+      "fever"
+    ],
+    "target_grade": 3,
+    "expected_decision": "escalate",
+    "messiness": "sloppy",
+    "hard": false
+  },
+  {
+    "id": "syn_0072",
+    "report_text": "Patient ID: PT-0042. On day 3 following the dose of Trelagliptor, the patient experienced pruritus and dizziness. Upon arrival at the emergency department, the patient's blood pressure was 92/58 mmHg, heart rate was 112 beats per minute, and oxygen saturation was 88% on room air. The patient was unable to get out of bed independently and required assistance for self-care activities. IV fluids were initiated, and the patient was placed on supplemental oxygen. A serum creatinine level of 2.5 mg/dL was noted, indicating renal impairment. After several hours in the ED, the patient was admitted to the hospital ward for further management.",
+    "drug": "Trelagliptor",
+    "symptoms": [
+      "pruritus",
+      "dizziness"
+    ],
+    "target_grade": 3,
+    "expected_decision": "escalate",
+    "messiness": "clean",
+    "hard": false
+  },
+  {
+    "id": "syn_0073",
+    "report_text": "PT-0042 experienced rt knee arthralgia starting 2 hrs post-dose of Zolpretin. Admitted to hospital ward. VS: BP 88/50, HR 112, Temp 100.8\u00b0F. Unable to get out of bed, c/o SOB and n/v. Received IV fluids, IV pain management, oxygen therapy. Labs showed elevated WBC 15,000, CRP 8.5. Remained in hospital for 3 days.",
+    "drug": "Zolpretin",
+    "symptoms": [
+      "arthralgia"
+    ],
+    "target_grade": 3,
+    "expected_decision": "escalate",
+    "messiness": "abbreviated",
+    "hard": false
+  },
+  {
+    "id": "syn_0074",
+    "report_text": "PT-0042 started experiencing a cough and elevated blood pressure of 180/110 about 4 hours after the last dose of Zolpretin. The patient was admitted to the hospital ward after spending approximately 3 hours in the ED. Initial treatment included IV fluids and oxygen support, with a respiratory rate of 24 breaths per minute noted. The patient was unable to get out of bed without assistance and required help with basic self-care tasks.",
+    "drug": "Zolpretin",
+    "symptoms": [
+      "hypertension",
+      "cough"
+    ],
+    "target_grade": 3,
+    "expected_decision": "escalate",
+    "messiness": "sloppy",
+    "hard": false
+  },
+  {
+    "id": "syn_0075",
+    "report_text": "PT-0042 experienced onset of fatigue and pallor approximately 48 hours after receiving the study drug Panvorexin. Upon arrival at the emergency department, vital signs recorded were: blood pressure 88/54 mmHg, heart rate 112 bpm, respiratory rate 22 breaths/min, and oxygen saturation at 90% on room air. Laboratory results indicated hemoglobin level of 7.2 g/dL. The patient required intravenous fluids and a blood transfusion of 2 units. The patient was unable to perform self-care tasks and needed assistance getting out of bed. After treatment, the patient was admitted to the hospital ward for further care.",
+    "drug": "Panvorexin",
+    "symptoms": [
+      "anemia"
+    ],
+    "target_grade": 3,
+    "expected_decision": "escalate",
+    "messiness": "clean",
+    "hard": false
+  },
+  {
+    "id": "syn_0076",
+    "report_text": "Patient ID: PT-0042. Approximately 30 minutes after receiving the third dose of Veltorib, the patient exhibited dyspnea and was found in respiratory distress. Vital signs were recorded as SpO2 at 82%, heart rate at 130 bpm, and a systolic blood pressure of 75 mmHg. The patient was transported to the ICU, where intubation was performed, and vasopressors were administered. Laboratory results indicated elevated lactate levels, and urine output was noted to be less than 20 mL over the last hour.",
+    "drug": "Veltorib",
+    "symptoms": [
+      "dyspnea"
+    ],
+    "target_grade": 4,
+    "expected_decision": "escalate",
+    "messiness": "clean",
+    "hard": false
+  },
+  {
+    "id": "syn_0077",
+    "report_text": "PT-0042, dose at 14:00. Began c/o SOB at 14:30. VS: HR 140, BP 76/50, SpO2 82% on RA. Transferred to ICU at 14:45. Intubated at 15:00; norepinephrine started. Platelets 50,000. Exhibiting decreased urine output and altered mental status.",
+    "drug": "Emvatuzumab",
+    "symptoms": [
+      "hypotension",
+      "thrombocytopenia"
+    ],
+    "target_grade": 4,
+    "expected_decision": "escalate",
+    "messiness": "abbreviated",
+    "hard": false
+  },
+  {
+    "id": "syn_0078",
+    "report_text": "Patient ID: PT-0042. Patient received Trelagliptor dose at approximately 1400. Began showing signs of fatigue and shortness of breath around 1500. By 1530, SpO2 was at 82% on room air, systolic BP measured at 78 mmHg. Patient was taken to the ICU; intubation was performed and multiple vasopressors were initiated. Labs showed hemoglobin levels were low. Patient could not speak or follow commands during this time, and there were indications of decreased perfusion in extremities.",
+    "drug": "Trelagliptor",
+    "symptoms": [
+      "anemia"
+    ],
+    "target_grade": 4,
+    "expected_decision": "escalate",
+    "messiness": "sloppy",
+    "hard": false
+  },
+  {
+    "id": "syn_0079",
+    "report_text": "Patient ID: PT-0042. Symptoms began approximately 30 minutes after the administration of Zolpretin. The patient presented with bilateral limb edema and dyspnea, with an SpO2 reading of 82% on room air and a systolic blood pressure of 78 mmHg. The patient was taken to the ICU for further management; intubation was performed due to deteriorating respiratory function. Intravenous vasopressors were initiated. The patient experienced diarrhea, with loose stools noted three times following the onset of symptoms, and urine output decreased significantly.",
+    "drug": "Zolpretin",
+    "symptoms": [
+      "edema limbs",
+      "dyspnea",
+      "diarrhea"
+    ],
+    "target_grade": 4,
+    "expected_decision": "escalate",
+    "messiness": "clean",
+    "hard": false
+  },
+  {
+    "id": "syn_0080",
+    "report_text": "PT-0042, 2 hrs post Zolpretin dose. C/o extreme fatigue, unable to sit up, SpO2 82% on room air, HR 120 bpm, BP 78/40 mmHg. Transferred to ICU. Intubated, vasopressors started. Urine output decreased, lactic acid levels elevated. Persistent tachycardia noted.",
+    "drug": "Zolpretin",
+    "symptoms": [
+      "fatigue"
+    ],
+    "target_grade": 4,
+    "expected_decision": "escalate",
+    "messiness": "abbreviated",
+    "hard": false
+  },
+  {
+    "id": "syn_0081",
+    "report_text": "Patient ID: PT-0042. Symptoms started about 3 hours after 2nd dose of Veltorib. Patient experienced chest pain while standing, then reported feeling dizzy and collapsed. Vitals taken in the ICU showed SpO2 at 82%, systolic BP at 78 mmHg. Immediate treatment included IV fluids and norepinephrine; patient was intubated due to respiratory distress. Lab results indicated hemoglobin at 8 g/dL and platelets at 45,000. Signs of organ dysfunction were observed.",
+    "drug": "Veltorib",
+    "symptoms": [
+      "anemia",
+      "chest pain",
+      "thrombocytopenia"
+    ],
+    "target_grade": 4,
+    "expected_decision": "escalate",
+    "messiness": "sloppy",
+    "hard": false
+  },
+  {
+    "id": "syn_0082",
+    "report_text": "Patient ID: PT-0042. Approximately 12 hours post-dose of Trelagliptor, the patient was noted to have a rapid decline in condition. Initial vital signs recorded: SpO2 82%, systolic BP 78 mmHg, heart rate 120 bpm. The patient was transported to the ICU for advanced care. During this time, vasopressors were initiated, and the patient required intubation due to respiratory distress. Laboratory results indicated a platelet count of 45,000/\u00b5L. Renal function tests showed elevated creatinine levels. The patient was unable to maintain consciousness and exhibited signs of multi-organ dysfunction.",
+    "drug": "Trelagliptor",
+    "symptoms": [
+      "thrombocytopenia"
+    ],
+    "target_grade": 4,
+    "expected_decision": "escalate",
+    "messiness": "clean",
+    "hard": false
+  },
+  {
+    "id": "syn_0083",
+    "report_text": "PT-0042, 48 hrs post 3rd dose Osurentib. C/o fatigue, hyperglycemic episode. VS: HR 120, BP 75/45, SpO2 82% on room air. Pt unresponsive, intubated, started on vasopressors. Transferred to ICU. Lab results pending.",
+    "drug": "Osurentib",
+    "symptoms": [
+      "hyperglycemia",
+      "fatigue"
+    ],
+    "target_grade": 4,
+    "expected_decision": "escalate",
+    "messiness": "abbreviated",
+    "hard": false
+  },
+  {
+    "id": "syn_0084",
+    "report_text": "Patient ID: PT-0042. Symptoms began about 4 hours after dose of Zolpretin. Patient was rushed to the ICU with SpO2 at 82%, systolic BP at 78. Patient required intubation and started on norepinephrine for blood pressure support. Labs showed potassium at 2.5. Patient was unresponsive and unable to follow commands.",
+    "drug": "Zolpretin",
+    "symptoms": [
+      "hypokalemia"
+    ],
+    "target_grade": 4,
+    "expected_decision": "escalate",
+    "messiness": "sloppy",
+    "hard": false
+  },
+  {
+    "id": "syn_0085",
+    "report_text": "PT-0042 experienced fever beginning approximately 24 hours after the administration of Trelagliptor, with a recorded temperature of 39.5\u00b0C. The patient presented to the ICU with SpO2 of 82% on room air, and a systolic blood pressure of 75 mmHg. The patient was intubated due to respiratory distress and received intravenous vasopressors to counteract hypotension. The patient demonstrated signs of multi-organ involvement with laboratory results indicating elevated creatinine levels.",
+    "drug": "Trelagliptor",
+    "symptoms": [
+      "fever",
+      "constipation",
+      "arthralgia"
+    ],
+    "target_grade": 4,
+    "expected_decision": "escalate",
+    "messiness": "clean",
+    "hard": false
+  },
+  {
+    "id": "syn_0086",
+    "report_text": "Patient ID: PT-0042. Onset of diarrhea began 3 hours post dose of Osurentib. Rushed to ICU after significant drop in BP to 78/50, HR increased to 130, SpO2 at 82% on room air. Initiated vasopressors, intubation required. Patient unresponsive, unable to follow commands. Lab results indicated elevated creatinine, signs of metabolic acidosis.",
+    "drug": "Osurentib",
+    "symptoms": [
+      "diarrhea"
+    ],
+    "target_grade": 4,
+    "expected_decision": "escalate",
+    "messiness": "abbreviated",
+    "hard": false
+  },
+  {
+    "id": "syn_0087",
+    "report_text": "PT-0042 began experiencing cough and limb edema approximately 2 hours after the dose of Cardexanib. By the time the patient was in the ICU, SpO2 was 82%, systolic BP was 75, and the patient was unable to communicate or follow commands. Diarrhea noted in the chart and IV fluids started, along with vasopressors and intubation. Labs indicated elevated creatinine and decreased urine output, suggesting possible kidney impairment.",
+    "drug": "Cardexanib",
+    "symptoms": [
+      "cough",
+      "edema limbs",
+      "diarrhea"
+    ],
+    "target_grade": 4,
+    "expected_decision": "escalate",
+    "messiness": "sloppy",
+    "hard": false
+  },
+  {
+    "id": "syn_0088",
+    "report_text": "Patient ID: PT-0042. Symptoms began approximately 2 hours after the administration of Cardexanib. The patient presented with a fever of 39.8\u00b0C and tachycardia with a heart rate of 130 bpm. Vitals recorded: SpO2 at 82%, systolic BP at 78 mmHg, respiratory rate at 28 breaths per minute. The patient was transported to the ICU where intubation was performed; vasopressors were initiated. Laboratory tests indicated elevated creatinine levels and altered liver function tests. The patient was unable to speak or follow commands upon arrival.",
+    "drug": "Cardexanib",
+    "symptoms": [
+      "fever"
+    ],
+    "target_grade": 4,
+    "expected_decision": "escalate",
+    "messiness": "clean",
+    "hard": false
+  },
+  {
+    "id": "syn_0089",
+    "report_text": "PT-0042: C/O headache and mucositis began 2 hrs post-Panvorexin dose. VS: HR 130, BP 75/50, SpO2 82%. Pt in respiratory distress, A&O x0. Rushed to ICU. Intubated, started on norepinephrine and fluid resuscitation. Labs show elevated lactate, Cr 2.1. Unable to speak or follow commands.",
+    "drug": "Panvorexin",
+    "symptoms": [
+      "headache",
+      "mucositis"
+    ],
+    "target_grade": 4,
+    "expected_decision": "escalate",
+    "messiness": "abbreviated",
+    "hard": false
+  },
+  {
+    "id": "syn_0090",
+    "report_text": "PT-0042 started having joint pain about 24 hours after the last dose of Cardexanib. This morning, the patient was found in bed with SpO2 at 82% and systolic BP at 78. The team rushed them to the ICU after they collapsed. Intubation was performed, and vasopressors were started. The patient is showing signs of decreased urine output and elevated lactate levels.",
+    "drug": "Cardexanib",
+    "symptoms": [
+      "arthralgia"
+    ],
+    "target_grade": 4,
+    "expected_decision": "escalate",
+    "messiness": "sloppy",
+    "hard": false
+  },
+  {
+    "id": "syn_0091",
+    "report_text": "Patient ID: PT-0042. Symptom onset occurred approximately 3 hours following the administration of Cardexanib. The patient presented to the emergency department with a blood glucose level of 350 mg/dL. Vitals included SpO2 of 82%, systolic BP of 75 mmHg, and heart rate of 120 bpm. The patient exhibited dyspnea with respiratory rate of 32 breaths/min and altered mental status. The patient was transferred to the ICU for management, where intubation was performed, and vasopressors were initiated. Urine output was recorded at less than 30 mL/hour. Headache persisted throughout this time.",
+    "drug": "Cardexanib",
+    "symptoms": [
+      "hyperglycemia",
+      "dyspnea",
+      "headache"
+    ],
+    "target_grade": 4,
+    "expected_decision": "escalate",
+    "messiness": "clean",
+    "hard": false
+  },
+  {
+    "id": "syn_0092",
+    "report_text": "PT-0042, n/v began 2 hrs post Veltorib dose. VS: SpO2 82%, BP 78/40, HR 130. Pt c/o SOB, unable to speak in full sentences. Transferred to ICU. Administered vasopressors, intubation initiated. Labs show elevated lactate, Cr 2.5. Signs of failing organs noted.",
+    "drug": "Veltorib",
+    "symptoms": [
+      "nausea"
+    ],
+    "target_grade": 4,
+    "expected_decision": "escalate",
+    "messiness": "abbreviated",
+    "hard": false
+  },
+  {
+    "id": "syn_0093",
+    "report_text": "PT-0042 received Cardexanib dose at 10 AM. By 3 PM, patient reported dizziness and swelling in both legs. Vitals taken at 4 PM showed SpO2 at 82%, systolic BP at 78. Patient was moved to the ICU quickly. Treatment included IV fluids and vasopressors. Patient appeared lethargic and could not respond to verbal cues. Edema in limbs was substantial, with noticeable skin tightness.",
+    "drug": "Cardexanib",
+    "symptoms": [
+      "dizziness",
+      "edema limbs"
+    ],
+    "target_grade": 4,
+    "expected_decision": "escalate",
+    "messiness": "sloppy",
+    "hard": false
+  },
+  {
+    "id": "syn_0094",
+    "report_text": "Patient ID: PT-0042. Approximately 12 hours after the last dose of Zolpretin, the patient developed abdominal distension and inability to pass stool. On admission to the ICU, vitals were noted: heart rate 120 bpm, respiratory rate 28 breaths/min, SpO2 82% on supplemental oxygen, and systolic blood pressure 78 mmHg. The patient was intubated and initiated on norepinephrine infusion. Lab results indicated elevated creatinine levels and metabolic acidosis. The patient remained unresponsive to verbal stimuli and unable to move limbs voluntarily.",
+    "drug": "Zolpretin",
+    "symptoms": [
+      "constipation"
+    ],
+    "target_grade": 4,
+    "expected_decision": "escalate",
+    "messiness": "clean",
+    "hard": false
+  },
+  {
+    "id": "syn_0095",
+    "report_text": "PT-0042: Nausea and hypotension began at approximately 30 min post Zolpretin dose. VS: SpO2 82%, BP 76/54, HR 122. C/o SOB, unable to sit up. Transferred to ICU. Intubation performed, initiated vasopressors. Signs of organ dysfunction present.",
+    "drug": "Zolpretin",
+    "symptoms": [
+      "nausea",
+      "hypotension"
+    ],
+    "target_grade": 4,
+    "expected_decision": "escalate",
+    "messiness": "abbreviated",
+    "hard": false
+  },
+  {
+    "id": "syn_0096",
+    "report_text": "Patient ID: PT-0042. Rash began about 2 hours after the last dose of Zolpretin. Transferred to ICU after SpO2 dropped to 82% and systolic BP fell to 76. Intubation was performed immediately, and vasopressors started. Patient appeared unresponsive, with diminished urine output noted and elevated creatinine levels.",
+    "drug": "Zolpretin",
+    "symptoms": [
+      "rash"
+    ],
+    "target_grade": 4,
+    "expected_decision": "escalate",
+    "messiness": "sloppy",
+    "hard": false
+  },
+  {
+    "id": "syn_0097",
+    "report_text": "Patient ID: PT-0042. Approximately 2 hours post-administration of Cardexanib, the patient presented with pruritus, followed by the onset of hypotension. Vital signs recorded: systolic BP 75 mmHg, diastolic BP 40 mmHg, heart rate 120 bpm, SpO2 at 82% on supplemental oxygen. The patient was intubated and transferred to the ICU for further management. Signs of acute kidney injury were apparent with urine output noted at 10 mL over 4 hours. The patient reported inability to follow commands during the transfer. Constipation was also noted with no bowel movement for 3 days prior to this event.",
+    "drug": "Cardexanib",
+    "symptoms": [
+      "hypotension",
+      "pruritus",
+      "constipation"
+    ],
+    "target_grade": 4,
+    "expected_decision": "escalate",
+    "messiness": "clean",
+    "hard": false
+  },
+  {
+    "id": "syn_0098",
+    "report_text": "PT-0042. N/V began ~2 hours post Trelagliptor dose. Brought to ICU. VS: SpO2 82%, HR 130, BP 78/40. Intubated. Administered vasopressors. Signs of renal failure noted. Patient unable to respond to commands.",
+    "drug": "Trelagliptor",
+    "symptoms": [
+      "vomiting"
+    ],
+    "target_grade": 4,
+    "expected_decision": "escalate",
+    "messiness": "abbreviated",
+    "hard": false
+  },
+  {
+    "id": "syn_0099",
+    "report_text": "PT-0042 experienced dizziness and mucositis starting about 24 hours after the last dose of Osurentib. Patient was found with SpO2 at 82%, systolic BP at 75, and unable to maintain consciousness. Rushed to ICU where intubation was performed, and vasopressors were administered. Blood glucose level was 400 mg/dL at the time of assessment.",
+    "drug": "Osurentib",
+    "symptoms": [
+      "hyperglycemia",
+      "mucositis",
+      "dizziness"
+    ],
+    "target_grade": 4,
+    "expected_decision": "escalate",
+    "messiness": "sloppy",
+    "hard": false
+  },
+  {
+    "id": "syn_0100",
+    "report_text": "Patient ID: PT-0042. Approximately 30 minutes after receiving the dose of Cardexanib, the patient reported dizziness and exhibited a sudden drop in vitals. Blood pressure recorded at 75/40 mmHg, heart rate 120 bpm, and SpO2 at 82% on room air. The patient was transported to the ICU for further evaluation and management. Intubation was performed due to respiratory distress, and two liters of normal saline were administered alongside the initiation of norepinephrine infusion. The patient remained unresponsive to commands following transfer.",
+    "drug": "Cardexanib",
+    "symptoms": [
+      "dizziness"
+    ],
+    "target_grade": 4,
+    "expected_decision": "escalate",
+    "messiness": "clean",
+    "hard": false
+  },
+  {
+    "id": "syn_0101",
+    "report_text": "Patient ID: PT-0042. The patient reported pruritus beginning approximately 24 hours after the administration of the fourth dose of Cardexanib. Vital signs recorded at this time showed BP 102/64 mmHg, HR 98 bpm, and O2 saturation at 93% on room air. By day 3 post-dose, the patient developed significant skin erythema and excoriation. The patient was admitted to the ward for further evaluation and was treated with antihistamines and corticosteroids. On day 5, vital signs were BP 70/40 mmHg, HR 122 bpm, with O2 saturation at 88% on room air. The patient was intubated and transferred to the ICU, where he remained unresponsive. The patient passed away on day 7 post-dose. Clinical team deemed the outcome related to the study drug.",
+    "drug": "Cardexanib",
+    "symptoms": [
+      "pruritus"
+    ],
+    "target_grade": 5,
+    "expected_decision": "escalate",
+    "messiness": "clean",
+    "hard": false
+  },
+  {
+    "id": "syn_0102",
+    "report_text": "PT-0042, 2 days post-dose of Veltorib. c/o fever 39.5\u00b0C, chills. initial VS: HR 120, BP 85/55, WBC 0.5 x10^9/L. IV fluids started, antibiotics administered. 24 hrs later, increased SOB, lethargy. VS: HR 150, BP 78/40. Transferred to ICU. No response to treatment. Expired 4 days post-dose. Related to study drug.",
+    "drug": "Veltorib",
+    "symptoms": [
+      "neutropenia",
+      "fever"
+    ],
+    "target_grade": 5,
+    "expected_decision": "escalate",
+    "messiness": "abbreviated",
+    "hard": false
+  },
+  {
+    "id": "syn_0103",
+    "report_text": "Patient ID: PT-0042. After receiving the study drug Cardexanib (dose given on Day 5), the patient reported a headache starting on Day 6, which seemed to increase in intensity. By Day 8, the patient was unable to perform basic activities, appeared confused, and demonstrated altered responsiveness. Vital signs taken on Day 8 showed BP 80/50 mmHg, HR 130 bpm, and SpO2 88%. The patient was admitted to the emergency department where they were given IV fluids and pain management. On Day 10, the patient was pronounced deceased. The headache was noted as possibly related to the study drug.",
+    "drug": "Cardexanib",
+    "symptoms": [
+      "headache"
+    ],
+    "target_grade": 5,
+    "expected_decision": "escalate",
+    "messiness": "sloppy",
+    "hard": false
+  },
+  {
+    "id": "syn_0104",
+    "report_text": "Patient ID: PT-0042. On Day 14 post-administration of Naxolimab, the patient exhibited a decrease in platelet count, recorded at 45,000/\u03bcL. The patient reported numbness and tingling in the extremities beginning on Day 10, with a documented inability to ambulate independently by Day 12. Vital signs at that time included blood pressure 88/50 mmHg, heart rate 122 bpm, oxygen saturation 92% on room air. The patient was admitted to the medical ward for transfusion support and symptomatic management, but subsequently expired on Day 16, with a final platelet count of 30,000/\u03bcL and heart rate of 135 bpm. The clinical team considered these findings to be related to the study drug.",
+    "drug": "Naxolimab",
+    "symptoms": [
+      "thrombocytopenia",
+      "peripheral sensory neuropathy"
+    ],
+    "target_grade": 5,
+    "expected_decision": "escalate",
+    "messiness": "clean",
+    "hard": false
+  },
+  {
+    "id": "syn_0105",
+    "report_text": "PT-0042, 58 y/o F. Received Veltorib 100 mg PO, dose 1 on Day 1. C/O pruritus starting Day 3 after dose. 10/10 itch, scratching noted. PMH: HTN, DM. On Day 4, VS: HR 112 bpm, BP 90/60 mmHg. SOB reported. Transferred to ward, given IV fluids and antihistamines; unresponsive to treatment. On Day 5, VS: HR 130 bpm, BP 80/50 mmHg. Cardiac arrest at 14:30. Resuscitation attempts unsuccessful. Pronounced dead at 15:05. Related to study drug.",
+    "drug": "Veltorib",
+    "symptoms": [
+      "pruritus"
+    ],
+    "target_grade": 5,
+    "expected_decision": "escalate",
+    "messiness": "abbreviated",
+    "hard": false
+  },
+  {
+    "id": "syn_0106",
+    "report_text": "Patient ID: PT-0042. Symptoms started about 24 hours after last dose of Panvorexin. The patient had a glucose level of 450 mg/dL and reported dizziness that prevented standing. Pruritus was observed over 60% of the body. The patient was admitted to the ICU for treatment. Insulin was given, but blood pressure dropped to 80/50 mmHg. The patient became unresponsive to stimuli and passed away 72 hours after symptoms began. Related to study drug.",
+    "drug": "Panvorexin",
+    "symptoms": [
+      "hyperglycemia",
+      "dizziness",
+      "pruritus"
+    ],
+    "target_grade": 5,
+    "expected_decision": "escalate",
+    "messiness": "sloppy",
+    "hard": false
+  },
+  {
+    "id": "syn_0107",
+    "report_text": "Patient ID: PT-0042. \n\nOn day 14 after the administration of Veltorib, the patient reported increased fatigue. Vital signs at that time were: blood pressure 90/55 mmHg, heart rate 110 bpm, respiratory rate 22 breaths/min, and oxygen saturation 92% on room air. The patient was admitted to the inpatient ward for evaluation, where intravenous fluids were administered. On day 16, the patient exhibited a drop in blood pressure to 70/40 mmHg and heart rate elevated to 130 bpm. Despite resuscitation efforts, the patient passed away on day 17. Clinical assessment deemed the event related to the study drug.",
+    "drug": "Veltorib",
+    "symptoms": [
+      "fatigue"
+    ],
+    "target_grade": 5,
+    "expected_decision": "escalate",
+    "messiness": "clean",
+    "hard": false
+  },
+  {
+    "id": "syn_0108",
+    "report_text": "PT-0042: Day 15 post Veltorib dose. C/o SOB, fatigue. VS: BP 80/50 mmHg, HR 110 bpm. Labs: Hgb 7.2 g/dL.  IV fluids initiated, blood transfusion ordered. Transferred to ICU. Day 17: continued hypotension, worsening anemia. DNR status. Day 19: expired. Cause considered related to study drug.",
+    "drug": "Veltorib",
+    "symptoms": [
+      "anemia",
+      "hypotension"
+    ],
+    "target_grade": 5,
+    "expected_decision": "escalate",
+    "messiness": "abbreviated",
+    "hard": false
+  },
+  {
+    "id": "syn_0109",
+    "report_text": "Patient ID: PT-0042. After the administration of the study drug Panvorexin on Day 1, the patient reported increasing fatigue starting on Day 2. They were seen at the clinic on Day 4 with a blood pressure of 90/60 mmHg, heart rate of 115 bpm, and oxygen saturation at 88%. The patient was unable to sit up without assistance and required IV fluids. By Day 5, the patient\u2019s condition declined; they were transferred to the ICU and intubated due to respiratory distress. The patient passed away on Day 7. The clinical team noted that the events appeared possibly related to the study drug.",
+    "drug": "Panvorexin",
+    "symptoms": [
+      "fatigue"
+    ],
+    "target_grade": 5,
+    "expected_decision": "escalate",
+    "messiness": "sloppy",
+    "hard": false
+  },
+  {
+    "id": "syn_0110",
+    "report_text": "Patient ID: PT-0042. On Day 7 following the administration of Trelagliptor, patient experienced diarrhea, with a frequency of 10 episodes within 24 hours, leading to dehydration. Vital signs recorded at this time were blood pressure 85/55 mmHg, heart rate 120 bpm, and temperature 99.5\u00b0F. Patient was admitted to the hospital for intravenous fluids and supportive care. \n\nOn Day 10, a complete blood count indicated neutrophils at 0.7 x 10^9/L. Patient continued to experience significant diarrhea, and by Day 12, exhibited confusion and lethargy; vital signs were blood pressure 70/40 mmHg, heart rate 130 bpm. Patient was transferred to the ICU for further management. On Day 14, medical team noted that patient had not regained consciousness. Patient expired later that day. Circumstances were considered related to the study drug.",
+    "drug": "Trelagliptor",
+    "symptoms": [
+      "diarrhea",
+      "neutropenia"
+    ],
+    "target_grade": 5,
+    "expected_decision": "escalate",
+    "messiness": "clean",
+    "hard": false
+  },
+  {
+    "id": "syn_0111",
+    "report_text": "PT-0042, D1 post-dose Zolpretin, c/o numbness in hands/feet, difficulty walking. D3, VS: HR 102, BP 88/60, RR 22. Pt admitted to inpatient care. Tx: IV fluids, pain management. D5, c/o SOB, n/v. D7, VS: HR 120, BP 70/50. D8, code blue. Resuscitation efforts unsuccessful. Time of death noted. Considered related to Zolpretin.",
+    "drug": "Zolpretin",
+    "symptoms": [
+      "peripheral sensory neuropathy"
+    ],
+    "target_grade": 5,
+    "expected_decision": "escalate",
+    "messiness": "abbreviated",
+    "hard": false
+  },
+  {
+    "id": "syn_0112",
+    "report_text": "Patient ID: PT-0042. On Day 14 post dose of Panvorexin, patient reported dizziness and itching. Vital signs showed BP 80/50 mmHg, HR 120 bpm, temp 99.8\u00b0F. CBC indicated neutrophil count of 0.5 x 10^9/L. Transferred to the ward for further evaluation. Patient experienced increased dizziness and was unable to stand without assistance. Given IV fluids and antibiotics. On Day 18, patient found unresponsive, vitals were BP 60/30 mmHg, HR 140 bpm; resuscitation attempts unsuccessful. Considered related to study drug.",
+    "drug": "Panvorexin",
+    "symptoms": [
+      "neutropenia",
+      "dizziness",
+      "pruritus"
+    ],
+    "target_grade": 5,
+    "expected_decision": "escalate",
+    "messiness": "sloppy",
+    "hard": false
+  },
+  {
+    "id": "syn_0113",
+    "report_text": "Patient ID: PT-0042. On Day 2 post-administration of Zolpretin, the patient reported dizziness starting approximately 12 hours after the dose. Vital signs recorded: blood pressure 80/50 mmHg, heart rate 120 bpm, respiratory rate 24 breaths/min, oxygen saturation 88% on room air. The patient was transported to the emergency department due to persistent dizziness and hypotension. Despite intravenous fluid resuscitation and administration of vasopressors, the patient experienced progressive decline in vital signs over the next 24 hours, ultimately leading to asystole. The healthcare team considered the timeline of symptoms and treatment history to be consistent with the effects of Zolpretin.",
+    "drug": "Zolpretin",
+    "symptoms": [
+      "dizziness"
+    ],
+    "target_grade": 5,
+    "expected_decision": "escalate",
+    "messiness": "clean",
+    "hard": false
+  },
+  {
+    "id": "syn_0114",
+    "report_text": "PT-0042. 5 days post dose of Cardexanib. C/o intense pruritus, generalized rash. Labs show Hgb 8.2 g/dL, WBC 1.2 x 10^9/L. VS: HR 110 bpm, BP 80/50 mmHg. Transferred to ICU for management. Received IV fluids, steroids. 48 hours post transfer, pt became unresponsive. Code blue called. Date of death: 7 days post dose. Study drug considered related.",
+    "drug": "Cardexanib",
+    "symptoms": [
+      "pruritus",
+      "anemia",
+      "neutropenia"
+    ],
+    "target_grade": 5,
+    "expected_decision": "escalate",
+    "messiness": "abbreviated",
+    "hard": false
+  },
+  {
+    "id": "syn_0115",
+    "report_text": "Patient ID: PT-0042. After administration of Naxolimab on Day 1, patient began showing signs of constipation on Day 3. Patient reported inability to have bowel movement for 4 days, with abdominal distension noted. Vital signs on Day 5 showed BP 85/50 mmHg, HR 120 bpm. Patient transferred to the ward for further observation, received fluids and laxatives, but continued to decline, ultimately passing away on Day 7. Family was informed. Considered related to the study drug.",
+    "drug": "Naxolimab",
+    "symptoms": [
+      "constipation"
+    ],
+    "target_grade": 5,
+    "expected_decision": "escalate",
+    "messiness": "sloppy",
+    "hard": false
+  },
+  {
+    "id": "syn_0116",
+    "report_text": "Patient ID: PT-0042. On Day 5 post-administration of Zolpretin, the patient reported chest pain and diarrhea. Vital signs measured at 14:30: blood pressure 80/50 mmHg, heart rate 120 bpm, respiratory rate 28 breaths/min, temperature 98.7\u00b0F. Patient was admitted to the medical ward for evaluation. Laboratory results indicated a neutrophil count of 0.7 x 10^9/L. Treatment with intravenous fluids and broad-spectrum antibiotics was initiated. The patient experienced worsening symptoms, became increasingly lethargic, and vital signs deteriorated at 02:00 on Day 6: blood pressure was 60/30 mmHg, heart rate peaked at 135 bpm. Patient was transferred to the ICU. Cardiopulmonary arrest occurred at 03:15. Resuscitation efforts were unsuccessful. The events were considered related to the study drug.",
+    "drug": "Zolpretin",
+    "symptoms": [
+      "neutropenia",
+      "chest pain",
+      "diarrhea"
+    ],
+    "target_grade": 5,
+    "expected_decision": "escalate",
+    "messiness": "clean",
+    "hard": false
+  },
+  {
+    "id": "syn_0117",
+    "report_text": "PT-0042, 62 y/o F, received Naxolimab 1 week prior. 4 days post dose, c/o constipation, last bowel movement 3 days ago. Day 5: VS - HR 112, BP 88/54, temp 100.8\u00b0F. N/V, abdominal distension noted. Transferred to ward for hydration and MgSO4. Day 7: VS - HR 130, BP 76/48. Agitation, unable to communicate. DNR in place. Died Day 8. Considered related to study drug.",
+    "drug": "Naxolimab",
+    "symptoms": [
+      "constipation"
+    ],
+    "target_grade": 5,
+    "expected_decision": "escalate",
+    "messiness": "abbreviated",
+    "hard": false
+  },
+  {
+    "id": "syn_0118",
+    "report_text": "Patient ID: PT-0042. After the second dose of Naxolimab, patient developed rash on torso and extremities beginning on day 3 post-dose. Noted elevated blood glucose levels of 340 mg/dL on day 5. Patient was admitted to the ward for further observation. On day 8, patient\u2019s condition worsened, with blood glucose rising to 400 mg/dL and increased respiratory rate noted at 28 breaths per minute. Patient was unable to ambulate without assistance and received insulin therapy. Patient expired on day 10. Event was considered possibly related to the study drug.",
+    "drug": "Naxolimab",
+    "symptoms": [
+      "hyperglycemia",
+      "rash"
+    ],
+    "target_grade": 5,
+    "expected_decision": "escalate",
+    "messiness": "sloppy",
+    "hard": false
+  },
+  {
+    "id": "syn_0119",
+    "report_text": "Patient ID PT-0042 received the study drug Trelagliptor at 14:00 on Day 3. The patient reported a headache beginning at 15:30, rated 8/10. By 18:00, vital signs were recorded as BP 90/60 mmHg, HR 122 bpm, SpO2 92% on room air. The patient exhibited confusion and was unable to follow commands. At 20:00, the patient was transferred to the emergency department. Despite interventions including IV fluids and oxygen therapy, the patient was pronounced dead at 21:45. The treating physician noted that the event was considered related to the study drug.",
+    "drug": "Trelagliptor",
+    "symptoms": [
+      "headache"
+    ],
+    "target_grade": 5,
+    "expected_decision": "escalate",
+    "messiness": "clean",
+    "hard": false
+  },
+  {
+    "id": "syn_0120",
+    "report_text": "PT-0042, 45 y/o F, dosed with Panvorexin at 09:00. C/O headache and lightheadedness at 09:30. BP 82/50 mmHg, HR 120 bpm, O2 sat 92%. SOB noted. Transferred to ED at 10:00. IV fluids started, VA 07:30, BP 70/40 mmHg. 11:00 - unresponsive, CPR initiated. 11:30 - pronounced deceased. Considered related to study drug.",
+    "drug": "Panvorexin",
+    "symptoms": [
+      "hypotension",
+      "headache"
+    ],
+    "target_grade": 5,
+    "expected_decision": "escalate",
+    "messiness": "abbreviated",
+    "hard": false
+  },
+  {
+    "id": "syn_0121",
+    "report_text": "PT-0042 experienced an increase in blood pressure to 190/110 mmHg approximately 12 hours after receiving Naxolimab. Patient reported a headache and nausea, leading to transport to the emergency room. In the ER, IV antihypertensives were administered, BP improved temporarily but then dropped to 80/50 mmHg. Patient remained unresponsive and passed away about 48 hours after the dose, with a potential connection to the study drug.",
+    "drug": "Naxolimab",
+    "symptoms": [
+      "hypertension"
+    ],
+    "target_grade": 5,
+    "expected_decision": "escalate",
+    "messiness": "sloppy",
+    "hard": false
+  },
+  {
+    "id": "syn_0122",
+    "report_text": "Patient ID: PT-0042. On Day 7 post Zolpretin administration, the patient reported a fever of 101.4\u00b0F, with a heart rate of 115 bpm and respiratory rate of 24 breaths per minute. Complete blood count showed a platelet count of 30,000/uL and blood glucose level of 250 mg/dL. The patient was admitted to the hospital for supportive care and received IV fluids, antipyretics, and insulin. On Day 10, the patient\u2019s condition deteriorated, with a blood pressure reading of 80/50 mmHg and oxygen saturation at 85% on room air. The patient succumbed later that day. The events were considered related to Zolpretin.",
+    "drug": "Zolpretin",
+    "symptoms": [
+      "thrombocytopenia",
+      "fever",
+      "hyperglycemia"
+    ],
+    "target_grade": 5,
+    "expected_decision": "escalate",
+    "messiness": "clean",
+    "hard": false
+  },
+  {
+    "id": "syn_0123",
+    "report_text": "PT-0042, 54 yo F. Dosed with Osurentib on Day 1. C/O fever starting Day 3, Tmax 39.5\u00b0C. VS: HR 118, BP 88/54, RR 24. SOB noted, SpO2 85% on room air. Administered IV fluids and antipyretics. Transferred to ICU on Day 5. Multiple organ failure documented. Died on Day 7. Assessment: event considered related to study drug.",
+    "drug": "Osurentib",
+    "symptoms": [
+      "fever"
+    ],
+    "target_grade": 5,
+    "expected_decision": "escalate",
+    "messiness": "abbreviated",
+    "hard": false
+  },
+  {
+    "id": "syn_0124",
+    "report_text": "Patient ID: PT-0042. On 10/15, after administrating 50 mg of Trelagliptor, the patient reported chest pain and constipation around 2 hours post-dose. By 10/16, patient was noted to have a BP of 80/50 mmHg and heart rate of 130 bpm, with a complaint of worsening chest pain. Initial assessment showed Hb at 7.5 g/dL. Patient admitted to the hospital for further evaluation and treatment. On 10/18, patient was unable to sit up in bed and required assistance for all activities. The patient was transitioned to palliative care on 10/20 and passed away on 10/22. The event was considered possibly related to the study drug.",
+    "drug": "Trelagliptor",
+    "symptoms": [
+      "chest pain",
+      "constipation",
+      "anemia"
+    ],
+    "target_grade": 5,
+    "expected_decision": "escalate",
+    "messiness": "sloppy",
+    "hard": false
+  },
+  {
+    "id": "syn_0125",
+    "report_text": "Patient ID: PT-0042. On Day 1, 30 minutes post Naxolimab infusion, the patient reported chest pain and displayed a heart rate of 112 bpm, blood pressure 150/95 mmHg, respiratory rate of 22 breaths/min, oxygen saturation 92% on room air. The patient was transported to the emergency department for evaluation. At approximately 2 hours post-infusion, the ECG demonstrated ST elevation in leads II, III, and aVF. The patient received aspirin and nitroglycerin, but subsequently, cardiac arrest occurred. Resuscitation efforts were initiated but the patient was pronounced dead 45 minutes later. Medical team assessed the event as related to the study drug.",
+    "drug": "Naxolimab",
+    "symptoms": [
+      "chest pain"
+    ],
+    "target_grade": 5,
+    "expected_decision": "escalate",
+    "messiness": "clean",
+    "hard": false
+  },
+  {
+    "id": "syn_0126",
+    "report_text": "Patient ID: PT-0042  \nSymptoms began about 2 hours after dosing with Trelagliptor. Patient reported nausea with intermittent vomiting. Vitals on arrival: BP 98/63, HR 102, SpO2 92%. IV fluids given, along with ondansetron 4 mg orally. Kept in the emergency department for about 4 hours for observation. Patient noted some difficulty in sitting up but was able to engage in conversation, albeit with some discomfort. Discharged home after a few hours with instructions for follow-up if symptoms persisted.",
+    "drug": "Trelagliptor",
+    "symptoms": [
+      "nausea"
+    ],
+    "target_grade": 3,
+    "expected_decision": "escalate",
+    "messiness": "sloppy",
+    "hard": true,
+    "hard_kind": "boundary"
+  },
+  {
+    "id": "syn_0127",
+    "report_text": "PT-0042, 3 days post-dose Veltorib. C/O inc fatigue, slight SOB. VS: BP 98/63, HR 101, SpO2 92%. Labs show neutrophil count at 1.5. Held in ED for 6 hrs, given 1L IV fluid, oral hydroxyzine. Could walk with assistance, needed rest frequently. Discharged home with instructions to follow up.",
+    "drug": "Veltorib",
+    "symptoms": [
+      "neutropenia"
+    ],
+    "target_grade": 3,
+    "expected_decision": "escalate",
+    "messiness": "abbreviated",
+    "hard": true,
+    "hard_kind": "boundary"
+  },
+  {
+    "id": "syn_0128",
+    "report_text": "Patient ID: PT-0042. After receiving the dose of Emvatuzumab approximately 3 hours prior, the patient reported dizziness and slight disorientation. Vitals showed BP 98/64, HR 102, and SpO2 at 92%. The patient remained at the emergency department for roughly 5 hours, during which they received 1 liter of IV fluids and some oral hydration. They were able to sit up but needed assistance when attempting to walk to the bathroom. The team decided to discharge the patient with instructions for follow-up, but the dizziness seemed to persist intermittently while the patient was observed.",
+    "drug": "Emvatuzumab",
+    "symptoms": [
+      "dizziness"
+    ],
+    "target_grade": 3,
+    "expected_decision": "escalate",
+    "messiness": "sloppy",
+    "hard": true,
+    "hard_kind": "boundary"
+  },
+  {
+    "id": "syn_0129",
+    "report_text": "Patient ID: PT-0042. Approximately 4 hours after receiving Zolpretin, the patient reported increased fatigue and difficulty maintaining usual activities, stating that they felt unusually tired. Vital signs recorded in the emergency department were BP 100/64 mmHg, HR 98 bpm, and SpO2 92% on room air. The patient was given one liter of IV fluids and observed for 5 hours, during which time the heart rate fluctuated between 90-105 bpm, and blood pressure remained stable around 95-102/60-66 mmHg. After observation, the patient was discharged but indicated they experienced moments of needing to rest more frequently and had not fully returned to baseline energy levels.",
+    "drug": "Zolpretin",
+    "symptoms": [
+      "fatigue"
+    ],
+    "target_grade": 2,
+    "expected_decision": "monitor",
+    "messiness": "clean",
+    "hard": true,
+    "hard_kind": "boundary"
+  },
+  {
+    "id": "syn_0130",
+    "report_text": "Patient ID PT-0042 experienced symptoms approximately 3 hours post-administration of Emvatuzumab. Vital signs recorded were blood pressure 98/64 mmHg, heart rate 102 bpm, and SpO2 at 92%. The patient was seen in the emergency department, where they remained under observation for approximately 4 hours. During this time, they received one bag of IV fluids and reported some dizziness when standing, but could ambulate with assistance to the restroom. After observation, the patient was discharged with instructions to follow up with their primary care physician.",
+    "drug": "Emvatuzumab",
+    "symptoms": [
+      "hypotension"
+    ],
+    "target_grade": 2,
+    "expected_decision": "monitor",
+    "messiness": "clean",
+    "hard": true,
+    "hard_kind": "boundary"
+  },
+  {
+    "id": "syn_0131",
+    "report_text": "PT-0042: After recent Cardexanib dose (2 hours post), pt c/o lightheadedness, slight SOB. VS: BP 98/62, HR 102, SpO2 92% on RA. IV fluids x1 bag given. Held in ED for 5 hrs, then transitioned to obs unit for 4 hrs. No formal admission, discharged after stable VS. Pt ambulated with assistance but noted some difficulty with stairs.",
+    "drug": "Cardexanib",
+    "symptoms": [
+      "hypotension"
+    ],
+    "target_grade": 2,
+    "expected_decision": "monitor",
+    "messiness": "abbreviated",
+    "hard": true,
+    "hard_kind": "boundary"
+  },
+  {
+    "id": "syn_0132",
+    "report_text": "Patient ID: PT-0042. The patient reported a cough starting approximately 12 hours after the last dose of Cardexanib. SpO2 at 91% on room air, pulse in the high-90s, and BP 98/65. Patient remained in the emergency department for about 5 hours, receiving a single bag of IV fluids and was given a dose of oral antihistamine. The patient was able to sit up and drink water but expressed some discomfort while talking and moving around. Discharged with instructions to follow up if symptoms didn\u2019t improve.",
+    "drug": "Cardexanib",
+    "symptoms": [
+      "cough"
+    ],
+    "target_grade": 3,
+    "expected_decision": "escalate",
+    "messiness": "sloppy",
+    "hard": true,
+    "hard_kind": "boundary"
+  },
+  {
+    "id": "syn_0133",
+    "report_text": "Patient ID: PT-0042. Symptoms seemed to start about 2 hours after the dose of Trelagliptor. Patient noted to be in distress, requiring immediate transfer to the ICU. On arrival, there was significant respiratory difficulty; patient needed intubation. Vasopressors started immediately due to low blood pressure. Signs of organ failure were apparent, and the patient could not maintain consciousness.",
+    "drug": "Trelagliptor",
+    "symptoms": [
+      "hypokalemia"
+    ],
+    "target_grade": 4,
+    "expected_decision": "escalate",
+    "messiness": "sloppy",
+    "hard": true,
+    "hard_kind": "missing_vital"
+  },
+  {
+    "id": "syn_0134",
+    "report_text": "PT-0042 was admitted to the hospital ward about 4 hours after receiving Veltorib. Upon arrival, the patient had difficulty getting out of bed and needed assistance with self-care tasks. They received IV fluids and medication to address blood pressure concerns, and supplemental oxygen was administered. The patient spent the night in the hospital for observation and continued support.",
+    "drug": "Veltorib",
+    "symptoms": [
+      "hypotension"
+    ],
+    "target_grade": 3,
+    "expected_decision": "escalate",
+    "messiness": "sloppy",
+    "hard": true,
+    "hard_kind": "missing_vital"
+  },
+  {
+    "id": "syn_0135",
+    "report_text": "PT-0042 was admitted to the hospital ward about 24 hours after receiving the latest dose of Naxolimab. The patient was unable to get out of bed without assistance and required help for all self-care tasks. IV fluids and medication were administered to address symptoms. Treatment included oxygen support. The patient spent a significant amount of time in the emergency department before admission.",
+    "drug": "Naxolimab",
+    "symptoms": [
+      "constipation"
+    ],
+    "target_grade": 3,
+    "expected_decision": "escalate",
+    "messiness": "sloppy",
+    "hard": true,
+    "hard_kind": "missing_vital"
+  },
+  {
+    "id": "syn_0136",
+    "report_text": "PT-0042 experienced nausea about 30 minutes after receiving the study drug Naxolimab. The situation quickly deteriorated, and the patient was rushed to the ICU where they required immediate intubation and vasopressor support. Ongoing assessments showed signs of failing organ function. The patient was unable to respond to commands and was unresponsive throughout the transfer.",
+    "drug": "Naxolimab",
+    "symptoms": [
+      "nausea"
+    ],
+    "target_grade": 4,
+    "expected_decision": "escalate",
+    "messiness": "sloppy",
+    "hard": true,
+    "hard_kind": "missing_vital"
+  },
+  {
+    "id": "syn_0137",
+    "report_text": "Patient ID: PT-0042. Began experiencing diarrhea approximately 2 hours after last dose of Zolpretin. Symptoms worsened, and patient was taken to the ICU after showing signs of distress with notable changes in vitals. Treatment initiated in the ICU included vasopressor support, and patient required intubation due to respiratory difficulties. There was also evidence of renal function decline.",
+    "drug": "Zolpretin",
+    "symptoms": [
+      "diarrhea"
+    ],
+    "target_grade": 4,
+    "expected_decision": "escalate",
+    "messiness": "sloppy",
+    "hard": true,
+    "hard_kind": "missing_vital"
+  },
+  {
+    "id": "syn_0138",
+    "report_text": "PT-0042 began experiencing hypotension about 4 hours after the last dose of Naxolimab. The patient was admitted to the hospital ward due to persistent symptoms, spending several hours in the ED first. They required IV fluids and medication for management. Patient was unable to get out of bed independently and needed assistance with self-care activities. A nasal cannula was initiated for oxygen support.",
+    "drug": "Naxolimab",
+    "symptoms": [
+      "hypotension"
+    ],
+    "target_grade": 3,
+    "expected_decision": "escalate",
+    "messiness": "sloppy",
+    "hard": true,
+    "hard_kind": "missing_vital"
+  },
+  {
+    "id": "syn_0139",
+    "report_text": "Patient ID: PT-0042. Symptoms seemed to start about 30 minutes after the last dose of Trelagliptor. SpO2 was recorded in the low 80s, systolic BP was measured below 80. Patient was quickly moved to the ICU. Intubation was performed, and vasopressors were initiated. There were signs of organ failure with changes in urine output and altered mental status.",
+    "drug": "Trelagliptor",
+    "symptoms": [
+      "methemoglobinemia"
+    ],
+    "target_grade": 4,
+    "expected_decision": "escalate",
+    "messiness": "sloppy",
+    "hard": true,
+    "hard_kind": "rare_term"
+  },
+  {
+    "id": "syn_0140",
+    "report_text": "Patient ID: PT-0042. Symptoms began approximately 30 minutes after administration of Cardexanib. Patient presented with SpO2 of 82% on room air, systolic BP at 78 mmHg, heart rate of 130 bpm. Patient was unresponsive to verbal stimuli and required intubation. Vasopressors were initiated, and the patient was transferred to the ICU. Laboratory results indicated elevated lactate levels and decreased urine output.",
+    "drug": "Cardexanib",
+    "symptoms": [
+      "anaphylaxis"
+    ],
+    "target_grade": 4,
+    "expected_decision": "escalate",
+    "messiness": "clean",
+    "hard": true,
+    "hard_kind": "rare_term"
+  },
+  {
+    "id": "syn_0141",
+    "report_text": "Patient ID PT-0042 received the study drug Zolpretin on 10/01/2023. Symptoms of pneumonitis began on 10/05/2023, including increased respiratory distress and cough. Vital signs at that time included a respiratory rate of 30 breaths per minute, oxygen saturation of 85% on room air, and heart rate of 110 beats per minute. The patient was admitted to the hospital on 10/06/2023 for supportive care and started on supplemental oxygen and corticosteroids. On 10/10/2023, the patient experienced respiratory failure and was transferred to the ICU. Despite intubation and mechanical ventilation, the patient expired on 10/12/2023. It was determined that the condition was related to the administration of Zolpretin.",
+    "drug": "Zolpretin",
+    "symptoms": [
+      "pneumonitis"
+    ],
+    "target_grade": 5,
+    "expected_decision": "escalate",
+    "messiness": "clean",
+    "hard": true,
+    "hard_kind": "rare_term"
+  },
+  {
+    "id": "syn_0142",
+    "report_text": "PT-0042 began experiencing symptoms of breast infection approximately 3 days after the last dose of Veltorib. The patient reported localized redness and tenderness in the left breast. Vital signs included temperature 99.1\u00b0F, heart rate 82 bpm, respiratory rate 16 breaths per minute, and blood pressure 120/76 mmHg. Laboratory results showed a WBC count of 11.2 x 10^9/L. The patient reduced participation in errands and hobbies, remaining at home during this time. Treatment included a 7-day course of oral antibiotics, and study medication was held for 5 days. Follow-up indicated resolution of symptoms, with no need for hospitalization.",
+    "drug": "Veltorib",
+    "symptoms": [
+      "breast infection"
+    ],
+    "target_grade": 2,
+    "expected_decision": "monitor",
+    "messiness": "clean",
+    "hard": true,
+    "hard_kind": "rare_term"
+  },
+  {
+    "id": "syn_0143",
+    "report_text": "Patient ID: PT-0042. Symptoms of phlebitis seem to start around day 5 after the last dose of Emvatuzumab. Patient reported some noticeable redness and tenderness along the vein, but they stayed out of the hospital. Vitals taken were 98.6\u00b0F, BP 120/76, pulse 78, and labs show a slight increase in white blood cell count. They scaled back on errands and chores, primarily resting at home. Treatment was oral antibiotics prescribed, and the study drug dose was held for a few days.",
+    "drug": "Emvatuzumab",
+    "symptoms": [
+      "phlebitis infective"
+    ],
+    "target_grade": 2,
+    "expected_decision": "monitor",
+    "messiness": "sloppy",
+    "hard": true,
+    "hard_kind": "rare_term"
+  },
+  {
+    "id": "syn_0144",
+    "report_text": "Patient ID: PT-0042. Symptoms seemed to start about 5 days after the last dose of Panvorexin. The patient reported muscle discomfort and swelling in arms and legs. Vital signs: BP 120/80, HR 88, temp 99.0\u00b0F, slightly elevated creatine kinase levels. Patient has been staying home more, cutting back on errands and chores. They were prescribed a simple oral medication, and the study drug was held for a few days. Vitals remained stable during this time.",
+    "drug": "Panvorexin",
+    "symptoms": [
+      "infective myositis"
+    ],
+    "target_grade": 2,
+    "expected_decision": "monitor",
+    "messiness": "sloppy",
+    "hard": true,
+    "hard_kind": "rare_term"
+  },
+  {
+    "id": "syn_0145",
+    "report_text": "Patient ID: PT-0042. On Day 3 after administration of Veltorib, the patient reported sudden onset of dyspnea and nausea while at home. Vital signs upon arrival to the emergency department included a blood pressure of 80/50 mmHg, heart rate of 110 beats per minute, and oxygen saturation at 88% on room air. The patient required supplemental oxygen via nasal cannula and intravenous fluids. The patient appeared fatigued and was unable to get out of bed without assistance. After 4 hours in the ED, the patient was transferred to a hospital ward for further care.",
+    "drug": "Veltorib",
+    "symptoms": [
+      "dyspnea",
+      "nausea",
+      "hypotension"
+    ],
+    "target_grade": 3,
+    "expected_decision": "escalate",
+    "messiness": "clean",
+    "hard": true,
+    "hard_kind": "multi_symptom"
+  },
+  {
+    "id": "syn_0146",
+    "report_text": "PT-0042: Symptoms began approx. 4 hrs post Zolpretin dose. Pt c/o dizziness, unable to get out of bed, requires assistance for basic self-care. VS: BP 88/54, HR 112, O2 sat 90% on room air. Lab results: plt count 45,000. Admitted to hospital ward. IV fluids started. O2 via nasal cannula. Pt feels light-headed when sitting up. Transfusion initiated. Nausea reported, n/v episodes.",
+    "drug": "Zolpretin",
+    "symptoms": [
+      "dizziness",
+      "thrombocytopenia"
+    ],
+    "target_grade": 3,
+    "expected_decision": "escalate",
+    "messiness": "abbreviated",
+    "hard": true,
+    "hard_kind": "multi_symptom"
+  },
+  {
+    "id": "syn_0147",
+    "report_text": "PT-0042 reports symptoms starting 12 hours after the last dose of Osurentib. Patient admitted to hospital with blood glucose level at 320 mg/dL, thrombocyte count at 50,000/mcL, and complaints of pruritus over large areas of skin. Vitals recorded: BP 110/70, HR 102, temp 99\u00b0F. Patient unable to get out of bed without assistance, required IV fluids and insulin administration. Noted scratching and discomfort, but also appeared to engage in casual conversations with staff.",
+    "drug": "Osurentib",
+    "symptoms": [
+      "hyperglycemia",
+      "thrombocytopenia",
+      "pruritus"
+    ],
+    "target_grade": 3,
+    "expected_decision": "escalate",
+    "messiness": "sloppy",
+    "hard": true,
+    "hard_kind": "multi_symptom"
+  },
+  {
+    "id": "syn_0148",
+    "report_text": "Patient ID: PT-0042. Symptoms started around 11 AM following the morning dose of Zolpretin at 10 AM. Patient reported chest pain, systolic BP measured at 78 mmHg, and SpO2 dropped to low 80s. Initially able to walk but soon became lethargic and unresponsive. Patient was transferred to ICU, intubation performed, and vasopressors initiated. Labs indicated elevated creatinine levels and evidence of potential organ issues. Patient had also reported a headache and was seen drinking water prior to the worsening of symptoms.",
+    "drug": "Zolpretin",
+    "symptoms": [
+      "hypertension",
+      "chest pain"
+    ],
+    "target_grade": 4,
+    "expected_decision": "escalate",
+    "messiness": "sloppy",
+    "hard": true,
+    "hard_kind": "multi_symptom"
+  },
+  {
+    "id": "syn_0149",
+    "report_text": "Patient ID: PT-0042. Symptoms began approximately 5 hours after the administration of Veltorib. The patient presented with dyspnea, oxygen saturation at 85% on room air, and required admission to the hospital ward. Vital signs included a heart rate of 110 bpm, respiratory rate of 24 breaths/min, blood pressure of 100/60 mmHg, and a temperature of 99.5\u00b0F. The patient was unable to manage self-care tasks, demonstrated difficulty getting out of bed, and vomited twice during the evaluation, with a headache rated at 7/10. Intravenous fluids and oxygen therapy were administered during the hospital stay. The patient remained in the hospital and was unable to return to normal activities.",
+    "drug": "Veltorib",
+    "symptoms": [
+      "dyspnea",
+      "vomiting",
+      "headache"
+    ],
+    "target_grade": 3,
+    "expected_decision": "escalate",
+    "messiness": "clean",
+    "hard": true,
+    "hard_kind": "multi_symptom"
+  },
+  {
+    "id": "syn_0150",
+    "report_text": "PT-0042 began experiencing fever of 101.5\u00b0F and vomiting approximately 6 hours after the last dose of Osurentib. Diarrhea followed soon after, leading to multiple loose stools. The patient was admitted to the ICU with SpO2 at 82% on room air and systolic BP at 75 mmHg. Vasopressors were started, and the patient was intubated due to respiratory distress. Despite the symptoms, the patient reported being able to consume some clear liquids before the vomiting intensified. Lab tests showed elevated creatinine levels, and there was a reported increase in fatigue following the onset of symptoms.",
+    "drug": "Osurentib",
+    "symptoms": [
+      "fever",
+      "vomiting",
+      "diarrhea"
+    ],
+    "target_grade": 4,
+    "expected_decision": "escalate",
+    "messiness": "sloppy",
+    "hard": true,
+    "hard_kind": "multi_symptom"
+  }
+]

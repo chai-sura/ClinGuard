@@ -2,11 +2,25 @@
 ClinGuard protocol rule engine.
 
 Evaluates CTCAE grades against clinical trial safety rules and returns
-a structured decision for the safety officer agent.
+a structured decision for the verifier stage.
 """
 
-# Cardiac symptoms that trigger immediate escalation at Grade 3
+import re
+
+# Cardiac symptoms that trigger immediate escalation at Grade 3 (stored
+# normalized — see _normalize; the allow-list is matched against normalized keys).
 _CARDIAC_TERMS = {"chest pain", "cardiac arrest", "palpitations", "arrhythmia"}
+
+
+def _normalize(symptom) -> str:
+    """
+    Lowercase and collapse underscores/punctuation to spaces so key-formatting
+    variance can't defeat a safety rule: 'chest_pain', 'Chest-Pain', and
+    'chest pain' all normalize identically. Same root fix as the verifier's
+    grade-agreement check — a missed cardiac escalation from a formatting
+    mismatch is not acceptable on the safety-critical path.
+    """
+    return re.sub(r"[^a-z0-9]+", " ", str(symptom).lower()).strip()
 
 
 def check_protocol_rule(grades: dict) -> dict:
@@ -46,7 +60,7 @@ def check_protocol_rule(grades: dict) -> dict:
     grade_3_symptoms = [sym for sym, g in grades.items() if g == 3]
 
     # Rule 3 — Grade 3 cardiac event: cardiac safety protocol
-    if any(sym.lower() in _CARDIAC_TERMS for sym in grade_3_symptoms):
+    if any(_normalize(sym) in _CARDIAC_TERMS for sym in grade_3_symptoms):
         return {
             "decision": "escalate",
             "reason": (

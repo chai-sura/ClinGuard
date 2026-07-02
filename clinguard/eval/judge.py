@@ -8,12 +8,10 @@ pipeline run on 5 dimensions, then computes an overall_score.
 import json
 
 from dotenv import load_dotenv
-from langchain_openai import ChatOpenAI
+
+from clinguard.config import get_chat_model
 
 load_dotenv()
-
-# Independent judge model — same model, temperature=0 for determinism
-llm = ChatOpenAI(model="gpt-4o-mini", temperature=0)
 
 _SYSTEM_PROMPT = (
     "You are an independent clinical AI safety evaluator. "
@@ -65,6 +63,8 @@ def evaluate_decision(state: dict) -> dict:
     reasoning_depth, agent_agreement, overall_score.
     """
     reasoning_trace = state.get("reasoning_trace") or []
+
+    llm = get_chat_model("judge")
 
     user_message = (
         f"Original report:\n{state.get('report_text')}\n\n"

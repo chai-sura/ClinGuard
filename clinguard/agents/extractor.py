@@ -2,27 +2,40 @@
 ClinGuard Agent 1 — Extractor.
 
 Reads a raw adverse event report from AgentState and extracts
-structured clinical fields via GPT-4o-mini.
+structured clinical fields via the configured Claude model.
 """
 
 import json
 import time
 
 from dotenv import load_dotenv
-from langchain_openai import ChatOpenAI
 
+from clinguard.config import get_chat_model
 from clinguard.graph.state import AgentState
 
 load_dotenv()
-
-# Initialise once at module level so all invocations share the same client
-llm = ChatOpenAI(model="gpt-4o-mini", temperature=0)
 
 _SYSTEM_PROMPT = (
     "You are a clinical trial data extractor. Read the adverse "
     "event report and extract the following fields as JSON:\n"
     "- patient_id: string (format PT-XXXX, or UNKNOWN if not found)\n"
-    "- symptoms: list of strings (each symptom as a clean term)\n"
+    "- symptoms: list of strings. Name each adverse event using the standard "
+    "CTCAE clinical term, NOT the patient's lay wording — e.g. "
+    "'increased thirst and urination' -> 'hyperglycemia'; "
+    "'couldn't catch my breath' -> 'dyspnea'; 'throwing up' -> 'vomiting'. "
+    "Also infer the underlying condition implied by abnormal lab values or "
+    "vital signs and list it as a symptom: elevated blood glucose -> "
+    "'hyperglycemia', high blood pressure -> 'hypertension', low blood "
+    "pressure -> 'hypotension', low neutrophils -> 'neutropenia', low "
+    "platelets -> 'thrombocytopenia', low potassium -> 'hypokalemia'. "
+    "Only include conditions the report actually supports — do NOT invent "
+    "findings from thin or absent evidence, and do NOT put a severity word "
+    "or grade in the term (name the condition only). "
+    "If the report explicitly states the patient died or expired, include "
+    "'death' as a symptom (a CTCAE grade-5 event). Fire this ONLY on an "
+    "explicit death/expiration statement — do NOT infer death from "
+    "severe-but-survived language such as 'nearly died', 'life-threatening', "
+    "'coded but was revived', or 'stabilized after'.\n"
     "- severity_description: string (how patient described severity)\n"
     "- timeline: string (when symptoms started relative to dose)\n"
     "- vitals: string (any vitals mentioned, or NONE if not present)\n"
@@ -39,6 +52,8 @@ def extractor_node(state: AgentState) -> dict:
     """
     report_text = state["report_text"]
     start = time.time()
+
+    llm = get_chat_model("extractor")
 
     # Call the LLM with the extraction prompt
     response = llm.invoke([

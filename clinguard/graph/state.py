@@ -22,10 +22,13 @@ class AgentState(TypedDict):
     confidence: Optional[float]               # Classifier confidence in the assigned grades (0.0–1.0)
 
 
-    # Safety officer outputs
+    # Verifier outputs
     decision: Optional[str]                   # Final disposition: one of "escalate", "monitor", or "dismiss"
-    decision_memo: Optional[str]              # Human-readable justification for the safety officer's decision
+    decision_memo: Optional[str]              # Templated justification for the decision
     escalation_grade: Optional[int]           # Highest CTCAE grade that triggered escalation (0 if not escalated)
+    verifier_grades: Optional[Dict[str, int]] # Second-model (gpt-4o-mini) grades for cross-check
+    grade_agreement: Optional[bool]           # Whether grader and verifier grades matched exactly
+    needs_human_review: Optional[bool]        # True if disagreement / low confidence / verifier parse failure
 
 
     # Eval + observability
