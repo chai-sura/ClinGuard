@@ -7,4 +7,3 @@ python-dotenv
 pandas
 openpyxl
 streamlit
-sentence-transformers
