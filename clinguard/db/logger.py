@@ -235,8 +235,8 @@ def get_review_queue(status: str = "pending", limit: int = 50) -> list:
         SELECT
             q.run_id, q.status, q.system_decision, q.review_reasons,
             q.reviewer_decision, q.reviewer_note, q.reviewed_at, q.created_at,
-            d.patient_id, d.ctcae_grades, d.verifier_grades, d.grade_agreement,
-            d.confidence, d.decision, d.decision_memo
+            d.patient_id, d.report_text, d.ctcae_grades, d.verifier_grades,
+            d.grade_agreement, d.confidence, d.decision, d.decision_memo
         FROM review_queue q
         JOIN decisions d ON q.run_id = d.run_id
         {where}
