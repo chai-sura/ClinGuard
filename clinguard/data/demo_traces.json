@@ -1,0 +1,110 @@
+[
+  {
+    "label": "Escalate",
+    "id": "syn_0121",
+    "report_text": "PT-0042 experienced an increase in blood pressure to 190/110 mmHg approximately 12 hours after receiving Naxolimab. Patient reported a headache and nausea, leading to transport to the emergency room. In the ER, IV antihypertensives were administered, BP improved temporarily but then dropped to 80/50 mmHg. Patient remained unresponsive and passed away about 48 hours after the dose, with a potential connection to the study drug.",
+    "patient_id": "PT-0042",
+    "symptoms": [
+      "hypertension",
+      "headache",
+      "nausea",
+      "hypotension",
+      "death"
+    ],
+    "ctcae_grades": {
+      "hypertension": 4,
+      "headache": 3,
+      "nausea": 3,
+      "hypotension": 4,
+      "death": 5
+    },
+    "verifier_grades": {
+      "hypertension": 4,
+      "headache": 3,
+      "nausea": 3,
+      "hypotension": 4,
+      "death": 5
+    },
+    "grade_agreement": true,
+    "needs_human_review": false,
+    "decision": "escalate",
+    "escalation_grade": 5,
+    "confidence": 0.85,
+    "decision_memo": "[ESCALATE \u2014 immediate] Grade 5 event detected - patient death reported. FDA MedWatch report required within 7 days. CTCAE grades (grader/Claude): {'hypertension': 4, 'headache': 3, 'nausea': 3, 'hypotension': 4, 'death': 5}. Cross-model check (verifier/gpt-4o-mini): {'hypertension': 4, 'headache': 3, 'nausea': 3, 'hypotension': 4, 'death': 5} \u2014 AGREEMENT."
+  },
+  {
+    "label": "Monitor",
+    "id": "syn_0048",
+    "report_text": "PT-0042, c/o headache starting 3 days post dose of Osurentib. BP 130/85, HR 72, VS stable. Labs: CBC within normal limits. Pt scales back on errands, reports difficulty concentrating on hobbies. Managed with 500 mg acetaminophen, study drug held one day.",
+    "patient_id": "PT-0042",
+    "symptoms": [
+      "headache"
+    ],
+    "ctcae_grades": {
+      "headache": 2
+    },
+    "verifier_grades": {
+      "headache": 2
+    },
+    "grade_agreement": true,
+    "needs_human_review": false,
+    "decision": "monitor",
+    "escalation_grade": 2,
+    "confidence": 0.85,
+    "decision_memo": "[MONITOR \u2014 routine] Grade 2 event detected. Flag for next safety review meeting. CTCAE grades (grader/Claude): {'headache': 2}. Cross-model check (verifier/gpt-4o-mini): {'headache': 2} \u2014 AGREEMENT."
+  },
+  {
+    "label": "Dismiss",
+    "id": "syn_0023",
+    "report_text": "PT-0042. Fatigue noted on routine check, ~3 days post 2nd dose of Osurentib. VS: BP 120/78, HR 72, Temp 98.6\u00b0F, O2 Sat 98%. Pt c/o feeling tired, however, continues usual activities; no missed work. No treatment initiated, vitals remain within normal limits.",
+    "patient_id": "PT-0042",
+    "symptoms": [
+      "fatigue"
+    ],
+    "ctcae_grades": {
+      "fatigue": 1
+    },
+    "verifier_grades": {
+      "fatigue": 1
+    },
+    "grade_agreement": true,
+    "needs_human_review": false,
+    "decision": "dismiss",
+    "escalation_grade": 1,
+    "confidence": 0.95,
+    "decision_memo": "[DISMISS \u2014 none] Grade 1 event only. Continue monitoring per standard protocol. CTCAE grades (grader/Claude): {'fatigue': 1}. Cross-model check (verifier/gpt-4o-mini): {'fatigue': 1} \u2014 AGREEMENT."
+  },
+  {
+    "label": "Human review",
+    "id": "syn_0149",
+    "report_text": "Patient ID: PT-0042. Symptoms began approximately 5 hours after the administration of Veltorib. The patient presented with dyspnea, oxygen saturation at 85% on room air, and required admission to the hospital ward. Vital signs included a heart rate of 110 bpm, respiratory rate of 24 breaths/min, blood pressure of 100/60 mmHg, and a temperature of 99.5\u00b0F. The patient was unable to manage self-care tasks, demonstrated difficulty getting out of bed, and vomited twice during the evaluation, with a headache rated at 7/10. Intravenous fluids and oxygen therapy were administered during the hospital stay. The patient remained in the hospital and was unable to return to normal activities.",
+    "patient_id": "PT-0042",
+    "symptoms": [
+      "dyspnea",
+      "hypoxia",
+      "vomiting",
+      "headache",
+      "hypotension"
+    ],
+    "ctcae_grades": {
+      "dyspnea": 3,
+      "hypoxia": 3,
+      "vomiting": 3,
+      "headache": 3,
+      "hypotension": 3
+    },
+    "verifier_grades": {
+      "dyspnea": 4,
+      "hypoxia": 3,
+      "vomiting": 3,
+      "headache": 3,
+      "hypotension": 3
+    },
+    "grade_agreement": false,
+    "needs_human_review": true,
+    "decision": "escalate",
+    "escalation_grade": 3,
+    "confidence": 0.92,
+    "decision_memo": "[ESCALATE \u2014 immediate] Multiple concurrent Grade 3 events detected. Immediate escalation per co-occurrence protocol. CTCAE grades (grader/Claude): {'dyspnea': 3, 'hypoxia': 3, 'vomiting': 3, 'headache': 3, 'hypotension': 3}. Cross-model check (verifier/gpt-4o-mini): {'dyspnea': 4, 'hypoxia': 3, 'vomiting': 3, 'headache': 3, 'hypotension': 3} \u2014 DISAGREEMENT. [FLAGGED FOR HUMAN REVIEW: grader/verifier grade disagreement]"
+  }
+]
