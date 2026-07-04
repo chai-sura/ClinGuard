@@ -31,8 +31,7 @@ class AgentState(TypedDict):
     needs_human_review: Optional[bool]        # True if disagreement / low confidence / verifier parse failure
 
 
-    # Eval + observability
-    eval_scores: Optional[Dict[str, float]]   # Per-metric evaluation scores, e.g. {"accuracy": 0.91, "f1": 0.88}
+    # Observability
     reasoning_trace: Optional[List[str]]      # Ordered log of reasoning steps emitted by each agent
     latency_ms: Optional[float]               # End-to-end pipeline latency in milliseconds
     retry_count: Optional[int]                # Number of LLM retries performed across all agents in this run

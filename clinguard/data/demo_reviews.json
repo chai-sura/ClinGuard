@@ -1,0 +1,85 @@
+[
+  {
+    "run_id": "seed-PT-0221",
+    "patient_id": "PT-0221",
+    "system_decision": "dismiss",
+    "review_reasons": "low grader confidence (0.65 < 0.7)",
+    "report_text": "Patient ID: PT-0221. After administration of Emvatuzumab on Day 14, routine blood work noted neutrophil count at 1.2 x 10^9/L. Patient reported some discomfort in mouth starting around the same time, with white patches observed. Vital signs were 98.6\u00b0F, BP 120/80 mmHg, HR 72 bpm, O2 saturation 98% on room air. Patient continued attending work and engaging in usual daily activities without seeking additional treatment. No interventions noted.",
+    "ctcae_grades": {
+      "neutropenia": 1,
+      "oral mucositis": 1
+    },
+    "verifier_grades": {
+      "neutropenia": 1,
+      "oral mucositis": 1
+    }
+  },
+  {
+    "run_id": "seed-PT-0229",
+    "patient_id": "PT-0229",
+    "system_decision": "monitor",
+    "review_reasons": "grader/verifier grade disagreement",
+    "report_text": "Patient ID: PT-0229. Symptoms began approximately 36 hours after the latest dose of Naxolimab. Blood glucose levels measured at 215 mg/dL, and the patient reported increased thirst and urination. Vital signs recorded as: BP 130/85 mmHg, HR 82 bpm, RR 16 breaths/min, and temperature 98.6\u00b0F. The patient was advised to reduce physical activities, limiting errands and social outings. Glyburide 5 mg was administered orally, and the study drug was held for three days. The patient remained at home and did not require hospital admission. Follow-up labs conducted on day 5 showed blood glucose levels improved to 175 mg/dL.",
+    "ctcae_grades": {
+      "hyperglycemia": 2,
+      "polydipsia": 2,
+      "polyuria": 2
+    },
+    "verifier_grades": {
+      "hyperglycemia": 1,
+      "polydipsia": 1,
+      "polyuria": 1
+    }
+  },
+  {
+    "run_id": "seed-PT-0230",
+    "patient_id": "PT-0230",
+    "system_decision": "monitor",
+    "review_reasons": "grader/verifier grade disagreement",
+    "report_text": "PT-0230 - 3 days post Panvorexin dose. C/o chest pain, SOB. VS: HR 92, BP 120/80, RR 20, O2 Sat 95%. K+ 3.2. Scaled back errands and chores, avoided strenuous activity. Administered oral K+ supplement. Study drug held for 48 hours. Stable at home.",
+    "ctcae_grades": {
+      "chest pain": 2,
+      "dyspnea": 2,
+      "hypokalemia": 2
+    },
+    "verifier_grades": {
+      "chest pain": 2,
+      "dyspnea": 1,
+      "hypokalemia": 1
+    }
+  },
+  {
+    "run_id": "seed-PT-0232",
+    "patient_id": "PT-0232",
+    "system_decision": "escalate",
+    "review_reasons": "grader/verifier grade disagreement",
+    "report_text": "Patient ID PT-0232 experienced diarrhea beginning approximately 24 hours after the latest dose of Panvorexin. Recorded vital signs include blood pressure of 88/54 mmHg and heart rate of 102 bpm. The patient reported not engaging in regular errands or hobbies and noted increased fatigue. Oral hydration and loperamide were administered, and the study dose was held for 48 hours. Patient remained at home during this period, with stable vital signs recorded at the follow-up: blood pressure 100/62 mmHg and heart rate 94 bpm.",
+    "ctcae_grades": {
+      "diarrhea": 1,
+      "hypotension": 3,
+      "tachycardia": 2,
+      "fatigue": 2
+    },
+    "verifier_grades": {
+      "diarrhea": 1,
+      "hypotension": 2,
+      "tachycardia": 2,
+      "fatigue": 2
+    }
+  },
+  {
+    "run_id": "seed-PT-0233",
+    "patient_id": "PT-0233",
+    "system_decision": "monitor",
+    "review_reasons": "low grader confidence (0.55 < 0.7)",
+    "report_text": "PT-0233 c/o fatigue and decreased activity 3 days post dose of Naxolimab. Labs: K 3.1 mmol/L (normal range 3.5-5.0). VS stable: HR 72 bpm, BP 120/80 mmHg. Pt reduced errands and skipped weekly hobby due to weakness. Started on oral potassium 20 mEq QD. Study dose held for 48 hrs. No hospitalization required.",
+    "ctcae_grades": {
+      "fatigue": 2,
+      "hypokalemia": 1
+    },
+    "verifier_grades": {
+      "fatigue": 2,
+      "hypokalemia": 1
+    }
+  }
+]

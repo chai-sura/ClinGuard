@@ -87,7 +87,7 @@ def log_decision(state: dict) -> str:
     Insert one pipeline run into the decisions table.
 
     Serializes list/dict fields to JSON strings before insertion.
-    Returns the generated run_id so it can be passed to log_eval().
+    Returns the generated run_id.
     """
     run_id = str(uuid.uuid4())
     now = datetime.now(timezone.utc).isoformat()
@@ -154,47 +154,6 @@ def log_decision(state: dict) -> str:
             )
 
     return run_id
-
-
-def log_eval(run_id: str, eval_scores: dict) -> None:
-    """
-    Insert evaluation scores for a completed run into eval_scores.
-
-    Calculates overall_score as the mean of the five quality dimensions.
-    """
-    dimensions = [
-        "grounding",
-        "completeness",
-        "hallucination_risk",
-        "reasoning_depth",
-        "agent_agreement",
-    ]
-    scores = [float(eval_scores.get(d, 0.0)) for d in dimensions]
-    overall_score = sum(scores) / len(scores)
-    now = datetime.now(timezone.utc).isoformat()
-
-    with _connect() as conn:
-        conn.execute(
-            """
-            INSERT INTO eval_scores (
-                run_id, grounding, completeness, hallucination_risk,
-                reasoning_depth, agent_agreement, overall_score, created_at
-            ) VALUES (
-                :run_id, :grounding, :completeness, :hallucination_risk,
-                :reasoning_depth, :agent_agreement, :overall_score, :created_at
-            )
-            """,
-            {
-                "run_id": run_id,
-                "grounding": scores[0],
-                "completeness": scores[1],
-                "hallucination_risk": scores[2],
-                "reasoning_depth": scores[3],
-                "agent_agreement": scores[4],
-                "overall_score": overall_score,
-                "created_at": now,
-            },
-        )
 
 
 def get_recent_runs(limit: int = 10) -> list:
@@ -319,17 +278,6 @@ if __name__ == "__main__":
     }
     run_id = log_decision(sample_state)
     print(f"Logged decision with run_id: {run_id}")
-
-    # Log evaluation scores for that run
-    sample_eval = {
-        "grounding": 0.90,
-        "completeness": 0.85,
-        "hallucination_risk": 0.10,
-        "reasoning_depth": 0.80,
-        "agent_agreement": 0.95,
-    }
-    log_eval(run_id, sample_eval)
-    print(f"Logged eval scores for run_id: {run_id}")
 
     # Retrieve and display recent runs
     print("\nRecent runs:")

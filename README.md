@@ -3,7 +3,7 @@
 **Agentic triage for clinical-trial adverse events — grounded severity grading, a deterministic safety decision, and cross-model verification with a human in the loop.**
 
 🔗 **Live demo:** [clinicalguard.streamlit.app](https://clinicalguard.streamlit.app)
-🎥 **Demo video:** _(link coming soon)_
+🎥 **Demo video:** [▶ Watch the walkthrough](Demo-app.mp4)
 
 > Prototype for demonstration only — not a medical device, and not for clinical use. All metrics below are on **synthetic** data.
 

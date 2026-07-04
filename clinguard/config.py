@@ -28,7 +28,6 @@ _DEFAULTS = {
     # Cross-model verifier: OpenAI on purpose — a different model from the Claude
     # grader, so agreement is a genuine independent check, not self-confirmation.
     "verifier":       ("openai",    _OPENAI_MODEL, 384),
-    "judge":          ("openai",    _OPENAI_MODEL, 512),
     # Synthetic test-set generation — OpenAI on purpose: labels stay trustworthy
     # only if the grader (Claude) never sees its own phrasing.
     "generator":      ("openai",    _OPENAI_MODEL, 256),

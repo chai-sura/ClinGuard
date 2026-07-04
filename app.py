@@ -69,6 +69,7 @@ EXAMPLE_REPORT = (
 )
 
 _DEMO_PATH = os.path.join(os.path.dirname(__file__), "clinguard", "data", "demo_traces.json")
+_DEMO_REVIEWS_PATH = os.path.join(os.path.dirname(__file__), "clinguard", "data", "demo_reviews.json")
 
 st.set_page_config(page_title="ClinGuard", page_icon="🩺", layout="wide")
 
@@ -224,6 +225,15 @@ def _load_demo():
         return json.load(f)
 
 
+@st.cache_data
+def _load_demo_reviews():
+    try:
+        with open(_DEMO_REVIEWS_PATH, "r", encoding="utf-8") as f:
+            return json.load(f)
+    except (FileNotFoundError, json.JSONDecodeError):
+        return []
+
+
 _setup()
 DEMO = _load_demo()
 
@@ -324,6 +334,22 @@ def _fmt_time(iso) -> str:
         return str(iso)[11:16]
     except Exception:  # noqa: BLE001
         return "—"
+
+
+def _seed_act(run_id: str, decision: str, status: str) -> None:
+    """Apply an approve/override to a seeded (no-DB) review case, in session state.
+    Used only on the hosted demo, where the database starts empty."""
+    pending = st.session_state.get("seed_pending", [])
+    row = next((r for r in pending if r["run_id"] == run_id), None)
+    if not row:
+        return
+    st.session_state["seed_pending"] = [r for r in pending if r["run_id"] != run_id]
+    st.session_state.setdefault("seed_reviews", []).insert(0, {
+        "patient_id": row.get("patient_id"),
+        "status": status,
+        "reviewer_decision": decision,
+        "reviewed_at": time.strftime("%Y-%m-%dT%H:%M:%S"),
+    })
 
 
 # ------------------------------------------------------------------ #
@@ -550,9 +576,18 @@ with tab_review:
     if st.session_state.get("review_msg"):
         st.success(st.session_state.pop("review_msg"))
 
+    live_pending = get_review_queue(status="pending", limit=1000)
+    # Hosted demo starts with an empty database — seed the queue from a frozen file so a
+    # visitor can try approve/override without API keys or a populated DB. When the live
+    # queue has real items (e.g. locally) it takes precedence and the DB flow is used.
+    seeded = len(live_pending) == 0
+    if seeded and "seed_pending" not in st.session_state:
+        st.session_state["seed_pending"] = [dict(c) for c in _load_demo_reviews()]
+        st.session_state["seed_reviews"] = []
+
     q_left, q_right = st.columns([6, 5], gap="large")
     with q_left:
-        pending = get_review_queue(status="pending", limit=1000)
+        pending = st.session_state.get("seed_pending", []) if seeded else live_pending
         total = len(pending)
         queue = pending[:8]
         count_badge = f'<span class="pill accent" style="font-size:0.72rem;margin-left:0.45rem;">{total} pending</span>' if total else ""
@@ -584,13 +619,19 @@ with tab_review:
             )
             a, b, c = st.columns([2, 2, 3])
             if a.button("Approve", key=f"appr_{rid}", width="stretch"):
-                record_human_review(rid, row.get("system_decision"), "approved via UI")
+                if seeded:
+                    _seed_act(rid, row.get("system_decision"), "confirmed")
+                else:
+                    record_human_review(rid, row.get("system_decision"), "approved via UI")
                 st.session_state["review_msg"] = f"Recorded — {patient} marked confirmed. Saved to the review log."
                 st.rerun()
             override = c.selectbox("Override to", ["escalate", "monitor", "dismiss"],
                                    key=f"ov_{rid}", label_visibility="collapsed")
             if b.button("Override", key=f"ovb_{rid}", width="stretch"):
-                record_human_review(rid, override, f"overridden to {override} via UI")
+                if seeded:
+                    _seed_act(rid, override, "overridden")
+                else:
+                    record_human_review(rid, override, f"overridden to {override} via UI")
                 st.session_state["review_msg"] = f"Recorded — {patient} overridden to {override}. Saved to the review log."
                 st.rerun()
     with q_right:
@@ -598,10 +639,13 @@ with tab_review:
         # re-read fresh every rerun so approvals/overrides appear immediately.
         st.markdown('<div class="card-title" style="margin-top:0.5rem;">Recent reviews</div>'
                     '<div class="card-sub">Your confirmations and overrides.</div>', unsafe_allow_html=True)
-        acted_rows = (get_review_queue(status="confirmed", limit=1000)
-                      + get_review_queue(status="overridden", limit=1000))
-        acted = sorted((r for r in acted_rows if r.get("reviewed_at")),
-                       key=lambda r: r["reviewed_at"], reverse=True)[:6]
+        if seeded:
+            acted = st.session_state.get("seed_reviews", [])[:6]
+        else:
+            acted_rows = (get_review_queue(status="confirmed", limit=1000)
+                          + get_review_queue(status="overridden", limit=1000))
+            acted = sorted((r for r in acted_rows if r.get("reviewed_at")),
+                           key=lambda r: r["reviewed_at"], reverse=True)[:6]
         if acted:
             rbody = ""
             for r in acted:
