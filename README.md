@@ -1,239 +1,96 @@
-# ClinGuard — AI Clinical Trial Safety Monitor
+# ClinGuard
 
-![Python](https://img.shields.io/badge/Python-3.9-3776AB?style=flat-square&logo=python&logoColor=white)
-![LangGraph](https://img.shields.io/badge/LangGraph-0.2-00B4D8?style=flat-square)
-![OpenAI](https://img.shields.io/badge/OpenAI-GPT--4o--mini-412991?style=flat-square&logo=openai&logoColor=white)
-![Streamlit](https://img.shields.io/badge/Streamlit-1.x-FF4B4B?style=flat-square&logo=streamlit&logoColor=white)
-![SQLite](https://img.shields.io/badge/SQLite-3-003B57?style=flat-square&logo=sqlite&logoColor=white)
-![CTCAE](https://img.shields.io/badge/CTCAE-v6.0-2D6A4F?style=flat-square)
+**Agentic triage for clinical-trial adverse events — grounded severity grading, a deterministic safety decision, and cross-model verification with a human in the loop.**
 
-A 3-agent LangGraph system that classifies clinical trial adverse event reports against CTCAE v6.0 severity grades using ReAct reasoning loops, with a 5-dimension LLM-as-judge eval harness and full SQLite observability logging.
+🔗 **Live demo:** [clinicalguard.streamlit.app](https://clinicalguard.streamlit.app)
+🎥 **Demo video:** _(link coming soon)_
+
+> Prototype for demonstration only — not a medical device, and not for clinical use. All metrics below are on **synthetic** data.
 
 ---
 
-## The Problem
+## The problem
 
-Clinical trials generate hundreds of adverse event (AE) reports per week, each requiring manual classification using the NCI's Common Terminology Criteria for Adverse Events (CTCAE) grading system. This review process is time-consuming, inconsistent across reviewers, and high-stakes — a missed Grade 4 or 5 event can result in patient harm or FDA trial suspension. ClinGuard assists reviewers with AI-powered severity classification, deterministic protocol rule enforcement, and a full audit trail for every decision.
+Clinical trials generate a constant stream of free-text adverse-event (AE) reports — messy, abbreviated, and inconsistent. Each one has to be graded for severity and triaged (escalate, monitor, or dismiss), and getting it wrong in either direction is costly: a missed escalation is a safety risk, and over-escalation drowns reviewers in noise. Today this is slow, manual, and high-stakes.
 
----
+## What it does
+
+ClinGuard reads an AE report and runs it through a short, auditable pipeline:
+
+1. **Extracts** the symptoms and vitals from the raw text.
+2. **Grades** each symptom's severity, **grounded in the retrieved CTCAE v6.0 criteria** (the official medical severity scale) rather than model memory.
+3. **Decides** escalate / monitor / dismiss with a **deterministic rules engine** — not an LLM.
+4. **Verifies** the grades with a **different model** to catch disagreement.
+5. **Routes** low-confidence or disagreement cases to a **human-review queue**, and logs every run to a full **audit trail**.
 
 ## Architecture
 
 ```
-Input Report
-     │
-     ▼
-┌────────────────────────────────────┐
-│         LangGraph State Graph      │
-│                                    │
-│  ┌──────────┐   ┌──────────────┐   │
-│  │Extractor │──▶│  Classifier  │   │
-│  │ Agent 1  │   │   Agent 2    │   │
-│  └──────────┘   │  ReAct Loop  │   │
-│                 └──────┬───────┘   │
-│                        │           │
-│              confidence >= 0.7?    │
-│                        │           │
-│                 ┌──────▼───────┐   │
-│                 │Safety Officer│   │
-│                 │   Agent 3    │   │
-│                 └──────┬───────┘   │
-└────────────────────────┼───────────┘
-                         │
-              ┌──────────┼──────────┐
-              ▼          ▼          ▼
-         Decision    Eval Harness  SQLite
-           Memo      5 dimensions   Log
+Report ─► Extractor ─► Grader ─────► Rules engine ─────► Verifier ─────► Human review
+          (Claude)     (Claude,        (deterministic       (gpt-4o-mini,   (queue + audit log)
+                        CTCAE v6.0      code — makes the     independent
+                        grounded)       decision)            cross-check)
 ```
 
----
+Two deliberate choices define the design:
 
-## Agent Pipeline
-
-| Agent | Role | Tools Used |
-|---|---|---|
-| **Extractor** | Parses raw AE report into structured fields (patient ID, symptoms, vitals, timeline) | GPT-4o-mini |
-| **Classifier** | ReAct loop — grades each symptom against CTCAE v6.0; retries up to 3× if confidence < 0.7 | `lookup_ctcae_grade()`, `check_protocol_rule()` |
-| **Safety Officer** | Critic — writes a decision memo, confirms or overrides the classifier's grade, flags low-confidence runs | GPT-4o-mini, protocol rules |
-
----
-
-## Eval Harness
-
-Each pipeline run is scored by an independent LLM-as-judge call (separate from the pipeline agents to avoid self-evaluation bias).
-
-| Dimension | What It Measures | Type |
-|---|---|---|
-| **Grounding** | Are all memo claims traceable to the source report? | LLM-as-judge |
-| **Completeness** | Were all reported symptoms considered? | LLM-as-judge |
-| **Hallucination Risk** | Did the system fabricate clinical facts? | LLM-as-judge |
-| **Reasoning Depth** | Did the classifier use sufficient ReAct steps before grading? | LLM-as-judge |
-| **Agent Agreement** | Do the CTCAE grades and final decision logically agree? | LLM-as-judge |
-
----
+- **The decision is made by deterministic code, not an LLM.** The rules engine maps CTCAE grades to a disposition through fixed clinical-safety rules. The LLMs extract and grade; they never make the call. This keeps the safety-critical step transparent and testable.
+- **A different model verifies the primary grader.** The grader runs on **Claude**; an independent **OpenAI gpt-4o-mini** re-grades the same symptoms. Using a separate model avoids self-evaluation bias — agreement is a genuine cross-check, not a model grading its own work. Disagreement (or low grader confidence) flags the case for a human.
 
 ## Results
 
-```
-Eval Results — 50 synthetic AE fixtures
-─────────────────────────────────────────
-Overall Quality Score   : 0.997
-Grounding               : 1.000
-Completeness            : 0.990
-Hallucination Risk      : 0.000  (lower is better)
-Reasoning Depth         : 0.996
-Agent Agreement         : 1.000
-Mean Latency            : 11.6s
-─────────────────────────────────────────
-Note: Evaluated on synthetic data. Real-world performance
-requires validation on de-identified clinical trial data.
-```
+Measured on **150 synthetic, label-by-construction cases** (target grade chosen first, then observable text generated to match — no severity leakage). See [RESULTS.md](RESULTS.md).
 
----
+| Metric | Result |
+| --- | --- |
+| Standard grade accuracy | **81.6%** (102/125) |
+| Escalation accuracy | **94.4%** (118/125) |
+| Hard-case grade accuracy | **84.0%** (21/25) |
+| Cross-model agreement (decision-level) | **94%** |
+| Human-review rate | **~11%** |
 
-## Tech Stack
+**Safety framing.** On the standard cases there were **zero dangerous misses** — no should-escalate event was ever under-decided. Across all 150 cases there was exactly **one** under-escalation, on a deliberately ambiguous *boundary* case (a grade-3 that read as grade-2). The cross-model verifier disagreed on it and it was **routed to human review** — the safety net working as designed. Grade errors skew toward *over*-grading (the safe direction), which is why escalation accuracy stays high even where raw grade accuracy is middling.
 
-| Layer | Technology |
-|---|---|
-| Agent orchestration | LangGraph |
-| LLM | OpenAI GPT-4o-mini |
-| ReAct reasoning | Custom prompt loop with tool binding |
-| CTCAE lookup | pandas + CTCAE v6.0 Excel (NCI) |
-| Memory & logging | SQLite |
-| Eval harness | LLM-as-judge (GPT-4o-mini, independent call) |
-| Dashboard | Streamlit |
+## Key engineering decisions
 
----
+- **Retrieval-grounded grading.** Grades are driven by the actual CTCAE v6.0 criterion text retrieved per symptom, not the model's memory of the rulebook — and the retrieved text is shown in the UI as the grounding proof.
+- **Deterministic safety guardrail.** The escalate/monitor/dismiss decision is fixed code with explicit protocol rules, so the critical step is auditable and can't hallucinate.
+- **Cross-model verification.** A second, different model re-grades every case, so the confidence signal isn't self-referential.
+- **Human-in-the-loop.** Uncertain cases (disagreement or low confidence) are persisted to a review queue where a reviewer confirms or overrides, and the action is logged.
+- **Honest evaluation.** The harness scores against ground-truth labels on a purpose-built synthetic set — not an LLM grading its own family's output.
 
-## Project Structure
+## Known limitations
 
-```
-clinguard/
-├── agents/
-│   ├── extractor.py          # Agent 1 — structured extraction
-│   ├── classifier.py         # Agent 2 — ReAct grading loop
-│   └── safety_officer.py     # Agent 3 — critic & decision memo
-├── tools/
-│   ├── ctcae_lookup.py       # CTCAE v6.0 term lookup (exact + substring)
-│   └── protocol_rules.py     # 8-rule deterministic protocol engine
-├── graph/
-│   ├── state.py              # AgentState TypedDict
-│   └── graph.py              # LangGraph state graph + run_pipeline()
-├── eval/
-│   ├── judge.py              # LLM-as-judge eval harness
-│   └── run_evals.py          # Batch runner — 50 fixtures, aggregate metrics
-├── db/
-│   ├── schema.sql            # DDL for decisions + eval_scores tables
-│   └── logger.py             # init_db, log_decision, log_eval, get_recent_runs
-├── data/
-│   ├── CTCAE v6.0 Final_Jan2026.xlsx   # NCI CTCAE source data
-│   └── ae_fixtures.json                # 50 synthetic AE reports (10 per grade)
-app.py                        # Streamlit dashboard
-main.py                       # CLI entrypoint
-generate_fixtures.py          # Synthetic fixture generator
-requirements.txt
-```
+Framed as understood trade-offs (see [AUDIT.md](AUDIT.md)):
 
----
+- **Synthetic data, not real PHI.** Every case is constructed; the system has not been evaluated on real patient reports.
+- **~82% live grade accuracy**, with **numeric-threshold cases a known miss source** — grade-3 boundary calls that hinge on exact lab/vital cutoffs are the stubbornest band and don't improve with better extraction; they're inherent grade-boundary ambiguity.
+- **Borderline grade-1/2 cases can flip between runs** — genuinely two-way calls, non-dangerous.
+- These uncertain cases are exactly what the **verifier and confidence gate are there to catch** and hand to a human, rather than silently deciding.
 
-## Setup & Installation
+## Tech stack
 
-**1. Clone the repo**
+Python · [LangGraph](https://github.com/langchain-ai/langgraph) · Claude (Haiku) · OpenAI gpt-4o-mini · Streamlit · SQLite · CTCAE v6.0
+
+## Future work
+
+- **OCR intake for field use:** photo of a handwritten note → OCR → **human verification of the transcription** → into the pipeline. This would let field staff capture AE reports from paper without manual data entry, while keeping a human checkpoint on the error-prone OCR step.
+
+## Run locally
+
 ```bash
 git clone https://github.com/chai-sura/ClinGuard.git
 cd ClinGuard
-```
-
-**2. Create a virtual environment**
-```bash
-python -m venv venv
-source venv/bin/activate   # Windows: venv\Scripts\activate
-```
-
-**3. Install dependencies**
-```bash
+python3 -m venv cenv && source cenv/bin/activate
 pip install -r requirements.txt
-```
 
-**4. Add your OpenAI API key**
+# Live analysis needs both keys (Demo/Examples work without them):
+cat > .env <<'EOF'
+ANTHROPIC_API_KEY=sk-ant-...
+OPENAI_API_KEY=sk-...
+EOF
 
-Create a `.env` file in the project root:
-```
-OPENAI_API_KEY=your-key-here
-```
-
-**5. Download CTCAE v6.0 data**
-
-Download the CTCAE v6.0 Excel file from the NCI CTEP website:
-[https://ctep.cancer.gov](https://ctep.cancer.gov)
-
-Save it as:
-```
-data/CTCAE v6.0 Final_Jan2026.xlsx
-```
-
-**6. Generate synthetic test fixtures** *(one-time)*
-```bash
-python generate_fixtures.py
-```
-
-**7. Run the Streamlit dashboard**
-```bash
 streamlit run app.py
 ```
 
-**8. Run a single report via CLI**
-```bash
-python main.py "Patient PT-0042 reported severe chest pain and shortness of breath 3 days after dose 2. BP 88/54, HR 115."
-```
-
-**9. Run the full eval harness**
-```bash
-python clinguard/eval/run_evals.py
-```
-
----
-
-## Sample Output
-
-```
-============================================================
-  ClinGuard — AI Clinical Trial Safety Monitor
-============================================================
-
-Patient ID   : PT-0042
-Symptoms     : chest pain, shortness of breath
-Vitals       : BP 88/54, HR 115
-Timeline     : 3 days after dose 2
-
-CTCAE Grade Assignment:
-  chest pain                Grade 4
-  shortness of breath       Grade 4
-
-!! ESCALATE — Immediate action required !!
-Escalation Grade : 4
-Confidence       : 90%
-Risk Score       : 0.95
-Latency          : 14.2s
-
-Eval Scores:
-  Grounding          : 1.00
-  Completeness       : 1.00
-  Hallucination Risk : 0.00
-  Reasoning Depth    : 1.00
-  Agent Agreement    : 1.00
-  Overall Score      : 1.00
-============================================================
-```
-
----
-
-## Limitations & Future Work
-
-- Evaluated on synthetic data generated by GPT-4o-mini; real-world use requires validation on de-identified clinical trial data
-- Production deployment requires HIPAA compliance, data governance review, and clinician validation before any patient-facing use
-- Future: fine-tune on real AE reports, add multi-language support, integrate with EDC systems (e.g., Medidata Rave, Veeva Vault)
-- The human-in-the-loop gate is currently simulated; production would require a clinician sign-off UI and audit workflow
-
----
-
+Open http://localhost:8501. The **Examples** tab replays real pre-computed traces with no API calls; **Analyze a report** runs the live pipeline (requires the keys above).

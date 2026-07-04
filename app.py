@@ -179,6 +179,7 @@ hr { border-color:var(--line); }
 .tag { padding:0.14rem 0.55rem; border-radius:7px; font-size:0.72rem; font-weight:640; }
 .tag.esc{background:var(--esc-bg);color:var(--esc);} .tag.mon{background:var(--mon-bg);color:var(--mon);}
 .tag.dis{background:var(--dis-bg);color:var(--dis);}
+.tag.neutral{background:var(--surface-2);color:var(--text-2);}
 
 .pill { padding:0.24rem 0.72rem; border-radius:999px; font-size:0.78rem; font-weight:640; }
 .pill.esc{background:var(--esc-bg);color:var(--esc);border:1px solid var(--esc-line);}
@@ -505,36 +506,44 @@ with tab_examples:
 # ---- Tab 2: Analyze (live) ----
 with tab_analyze:
     st.markdown('<div class="eyebrow" style="margin:0.5rem 0 0.5rem;">Analyze a real report</div>', unsafe_allow_html=True)
-    st.markdown('<div class="muted" style="margin-bottom:0.7rem;">Paste a report or edit the example below, then Run. '
-                f'Runs the full pipeline (a few seconds). Maximum {MAX_REPORT_CHARS:,} characters.</div>',
-                unsafe_allow_html=True)
-    report_text = st.text_area("report", value=EXAMPLE_REPORT, height=160, label_visibility="collapsed")
-    n = len(report_text)
-    over = n > MAX_REPORT_CHARS
-    st.markdown('<div class="muted">' + f'{n:,} / {MAX_REPORT_CHARS:,} characters'
-                + ('  ·  <span style="color:var(--esc);">too long — please trim</span>' if over else '')
-                + '</div>', unsafe_allow_html=True)
-    run = st.button("Run analysis", type="primary", disabled=over)
-    if run and report_text.strip():
-        t0 = time.time()
-        with st.spinner("Analyzing…"):
-            try:
-                result = run_pipeline(report_text.strip())
-                log_decision(result)
-                st.session_state["live_result"] = result
-                st.session_state["live_report"] = report_text.strip()
-                st.session_state["live_latency"] = time.time() - t0
-            except Exception as exc:  # noqa: BLE001
-                st.session_state["live_result"] = None
-                st.error(f"Could not complete the analysis: {exc}")
-    elif run:
-        st.warning("Please enter a report first.")
-
-    if st.session_state.get("live_result"):
-        lat = st.session_state.get("live_latency", 0)
-        st.markdown(f'<div class="muted" style="margin:0.5rem 0 0.9rem;">Completed in {lat:.1f}s · saved to the audit log.</div>',
+    # Live mode needs both keys (present locally via .env; via Streamlit secrets when hosted).
+    # If they're absent — e.g. the public hosted demo — show a friendly note, never a stack trace.
+    if not (os.getenv("ANTHROPIC_API_KEY") and os.getenv("OPENAI_API_KEY")):
+        st.info(
+            "**Live analysis requires API keys and runs locally.** On this hosted demo, "
+            "explore the **Examples** tab to see the full pipeline on real pre-computed cases."
+        )
+    else:
+        st.markdown('<div class="muted" style="margin-bottom:0.7rem;">Paste a report or edit the example below, then Run. '
+                    f'Runs the full pipeline (a few seconds). Maximum {MAX_REPORT_CHARS:,} characters.</div>',
                     unsafe_allow_html=True)
-        render_pipeline(st.session_state["live_result"], st.session_state.get("live_report", ""))
+        report_text = st.text_area("report", value=EXAMPLE_REPORT, height=160, label_visibility="collapsed")
+        n = len(report_text)
+        over = n > MAX_REPORT_CHARS
+        st.markdown('<div class="muted">' + f'{n:,} / {MAX_REPORT_CHARS:,} characters'
+                    + ('  ·  <span style="color:var(--esc);">too long — please trim</span>' if over else '')
+                    + '</div>', unsafe_allow_html=True)
+        run = st.button("Run analysis", type="primary", disabled=over)
+        if run and report_text.strip():
+            t0 = time.time()
+            with st.spinner("Analyzing…"):
+                try:
+                    result = run_pipeline(report_text.strip())
+                    log_decision(result)
+                    st.session_state["live_result"] = result
+                    st.session_state["live_report"] = report_text.strip()
+                    st.session_state["live_latency"] = time.time() - t0
+                except Exception as exc:  # noqa: BLE001
+                    st.session_state["live_result"] = None
+                    st.error(f"Could not complete the analysis: {exc}")
+        elif run:
+            st.warning("Please enter a report first.")
+
+        if st.session_state.get("live_result"):
+            lat = st.session_state.get("live_latency", 0)
+            st.markdown(f'<div class="muted" style="margin:0.5rem 0 0.9rem;">Completed in {lat:.1f}s · saved to the audit log.</div>',
+                        unsafe_allow_html=True)
+            render_pipeline(st.session_state["live_result"], st.session_state.get("live_report", ""))
 
 # ---- Tab 3: Review ----
 with tab_review:
@@ -543,10 +552,17 @@ with tab_review:
 
     q_left, q_right = st.columns([6, 5], gap="large")
     with q_left:
-        st.markdown('<div class="card-title" style="margin-top:0.5rem;">Human review</div>'
-                    '<div class="card-sub">Cases the Verifier flagged, awaiting your confirmation.</div>',
-                    unsafe_allow_html=True)
-        queue = get_review_queue(status="pending", limit=8)
+        pending = get_review_queue(status="pending", limit=1000)
+        total = len(pending)
+        queue = pending[:8]
+        count_badge = f'<span class="pill accent" style="font-size:0.72rem;margin-left:0.45rem;">{total} pending</span>' if total else ""
+        st.markdown(
+            f'<div class="card-title" style="margin-top:0.5rem;">Human review{count_badge}</div>'
+            '<div class="card-sub">Cases flagged for low confidence or model disagreement — human verification required.</div>'
+            '<div class="muted" style="margin:-0.4rem 0 1rem;">Confirm the system’s decision, or override it with your own '
+            'using the dropdown.</div>',
+            unsafe_allow_html=True,
+        )
         if not queue:
             st.markdown('<div class="muted">Nothing awaiting review.</div>', unsafe_allow_html=True)
         for row in queue:
@@ -578,8 +594,31 @@ with tab_review:
                 st.session_state["review_msg"] = f"Recorded — {patient} overridden to {override}. Saved to the review log."
                 st.rerun()
     with q_right:
-        st.markdown('<div class="card-title" style="margin-top:0.5rem;">Recent activity</div>'
-                    '<div class="card-sub">Latest decisions logged by the system.</div>', unsafe_allow_html=True)
+        # Human review actions live in the review log (separate from system decisions);
+        # re-read fresh every rerun so approvals/overrides appear immediately.
+        st.markdown('<div class="card-title" style="margin-top:0.5rem;">Recent reviews</div>'
+                    '<div class="card-sub">Your confirmations and overrides.</div>', unsafe_allow_html=True)
+        acted_rows = (get_review_queue(status="confirmed", limit=1000)
+                      + get_review_queue(status="overridden", limit=1000))
+        acted = sorted((r for r in acted_rows if r.get("reviewed_at")),
+                       key=lambda r: r["reviewed_at"], reverse=True)[:6]
+        if acted:
+            rbody = ""
+            for r in acted:
+                if (r.get("status") or "") == "overridden":
+                    act = (f'Overridden → <span class="tag {_decision_kind(r.get("reviewer_decision"))}">'
+                           f'{esc(r.get("reviewer_decision")).upper()}</span>')
+                else:
+                    act = '<span class="tag neutral">Confirmed</span>'
+                rbody += (f'<tr><td class="pt">{esc(r.get("patient_id") or "—")}</td>'
+                          f'<td>{act}</td><td>{_fmt_time(r.get("reviewed_at"))}</td></tr>')
+            st.markdown('<table class="audit"><thead><tr><th>Patient</th><th>Human action</th><th>Time</th>'
+                        f'</tr></thead><tbody>{rbody}</tbody></table>', unsafe_allow_html=True)
+        else:
+            st.markdown('<div class="muted">No human reviews yet.</div>', unsafe_allow_html=True)
+
+        st.markdown('<div class="card-title" style="margin-top:1.3rem;">Recent activity</div>'
+                    '<div class="card-sub">Decisions logged by the system.</div>', unsafe_allow_html=True)
         runs = get_recent_runs(10)
         if runs:
             body = ""
