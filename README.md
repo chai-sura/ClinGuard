@@ -1,9 +1,9 @@
 # ClinGuard
 
-**Agentic triage for clinical-trial adverse events — grounded severity grading, a deterministic safety decision, and cross-model verification with a human in the loop.**
+**Multi-model agentic triage for clinical-trial adverse events — grounded severity grading, a deterministic safety decision, and cross-model verification with a human in the loop.**
 
 🔗 **Live demo:** [clinicalguard.streamlit.app](https://clinicalguard.streamlit.app)
-🎥 **Demo video:** [▶ Watch the walkthrough](Demo-app.mp4)
+🎥 **Demo video:** [Watch on YouTube](https://youtu.be/YOUR_VIDEO_ID)
 
 > Prototype for demonstration only — not a medical device, and not for clinical use. All metrics below are on **synthetic** data.
 
@@ -32,10 +32,11 @@ Report ─► Extractor ─► Grader ─────► Rules engine ───�
                         grounded)       decision)            cross-check)
 ```
 
-Two deliberate choices define the design:
+Three deliberate choices define the design:
 
 - **The decision is made by deterministic code, not an LLM.** The rules engine maps CTCAE grades to a disposition through fixed clinical-safety rules. The LLMs extract and grade; they never make the call. This keeps the safety-critical step transparent and testable.
 - **A different model verifies the primary grader.** The grader runs on **Claude**; an independent **OpenAI gpt-4o-mini** re-grades the same symptoms. Using a separate model avoids self-evaluation bias — agreement is a genuine cross-check, not a model grading its own work. Disagreement (or low grader confidence) flags the case for a human.
+- **AI is used only where it earns its place.** Two steps need language understanding (extraction, grading); everything safety-critical is deterministic code. This is a multi-model pipeline with grounding and verification — not an autonomous agent looping over tools — and that restraint is the point.
 
 ## Results
 
@@ -64,7 +65,7 @@ Measured on **150 synthetic, label-by-construction cases** (target grade chosen 
 Framed as understood trade-offs (see [AUDIT.md](AUDIT.md)):
 
 - **Synthetic data, not real PHI.** Every case is constructed; the system has not been evaluated on real patient reports.
-- **~82% live grade accuracy**, with **numeric-threshold cases a known miss source** — grade-3 boundary calls that hinge on exact lab/vital cutoffs are the stubbornest band and don't improve with better extraction; they're inherent grade-boundary ambiguity.
+- **The 81.6% grade accuracy reflects real model output** — the same accuracy applies to live runs. **Numeric-threshold cases are the main miss source:** grade-3 boundary calls that hinge on exact lab/vital cutoffs are the stubbornest band and don't improve with better extraction — they're inherent grade-boundary ambiguity.
 - **Borderline grade-1/2 cases can flip between runs** — genuinely two-way calls, non-dangerous.
 - These uncertain cases are exactly what the **verifier and confidence gate are there to catch** and hand to a human, rather than silently deciding.
 
